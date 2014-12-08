@@ -3,6 +3,10 @@ Rails.application.routes.draw do
  
   root 'welcome#index'
 
+
+
+  resources :users, only: [:index, :create, :destroy, :update, :login]
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
