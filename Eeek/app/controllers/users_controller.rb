@@ -1,8 +1,20 @@
 class UsersController < ApplicationController
 
+	def index
+	end
+
+	def login
+		user = User.find_by(email: params[:email])
+		if user.password == params[:passoword]
+			redirect_to ""
+		end
+	end
+
 	def create
 		user = User.new(user_params)
-	 	user.save
+	 	if user.save
+	 		redirect_to ""
+	 	end
 	end
 
 	private
