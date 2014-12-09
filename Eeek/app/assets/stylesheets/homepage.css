@@ -7,6 +7,14 @@ body {
 	padding: 0;
 }
 
+.outermost {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
 .bd-sm {
 	border: 2px black solid;
 }
@@ -18,7 +26,7 @@ body {
 
 
 .login_page {
-	margin-left: 15%;
+	margin: 1% 0 0 15%;
 	width: 20%;
 
 }
@@ -39,6 +47,15 @@ body {
 	text-align: center;
 }
 
+.black_arrow {
+	background-image: url("black_arrow.jpeg");
+	background-size: 100%;
+	height: 4em;
+	width: 4em;
+	position: absolute;
+	margin-left: 64%;
+	margin-top: 13em;
+}
 
 .black_arrow:hover {
 	height: 4.25em;
@@ -51,7 +68,7 @@ body {
 	height: 4em;
 	width: 4em;
 	position: absolute;
-	margin-left: 108em;
+	margin-left: 73%;
 	margin-top: 13em;
 }
 
