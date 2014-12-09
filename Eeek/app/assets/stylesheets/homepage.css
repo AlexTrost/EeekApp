@@ -41,10 +41,11 @@ body {
 
 .about {
 	width: 30%;
-	margin-left: 60%;
+	margin: -17% 0 0 62%;
 	font-family: "Bree Serif";
 	font-size: 30px;
 	text-align: center;
+	position: relative;
 }
 
 .black_arrow {
