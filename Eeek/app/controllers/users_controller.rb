@@ -4,16 +4,17 @@ class UsersController < ApplicationController
 	end
 
 	def login
+		p "hloe" *50
 		user = User.find_by(email: params[:email])
 		if user.password == params[:passoword]
-			redirect_to ""
+			render action: "main"
 		end
 	end
 
 	def create
 		user = User.new(user_params)
 	 	if user.save
-	 		redirect_to ""
+	 		render action: "main"
 	 	end
 	end
 
