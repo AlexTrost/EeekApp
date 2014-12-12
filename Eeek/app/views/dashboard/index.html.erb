@@ -13,10 +13,12 @@
 	<li class="add_stuff_button"></li>
 	<li class="button_label" class="add_joy_label">add some joy</li>
 
-	<a href="/logout"><li class="logout_button"></li></a>
+	<%= link_to destroy_user_session_path, :method => :delete do %><li class="logout_button"></li></a>
 	<li class="button_label" class="logout_label">logout</li>
+	<% end %>
 
 </div>
 
 
 <%= link_to "sign out", destroy_user_session_path, :method => :delete %>
+
