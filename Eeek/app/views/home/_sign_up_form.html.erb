@@ -1,11 +1,14 @@
-
 <div class="signup_div">
 	<h1 class="signup_form_header">Don't have an account? Sign Up</h1>
 
 		<%= form_for :user, url: users_path, method: :post, :html => {:class => "signup_form"} do |f| %>
+			<% if @errors %>
+				<%= @errors %>
+			<% end %>
+			<%= f.text_field :name, :placeholder => "What's your first name?" %>
 			<%= f.text_field :email, :placeholder => "Email" %>
-			<%= f.text_field :first_name, :placeholder => "What's your first name?" %>
 			<%= f.password_field :password, :placeholder => "Password, shhh" %>
+			<%= f.password_field :password_confirmation, :placeholder => "Confirm your password" %>
 			<%= f.submit %>
 		<% end %>        
 	

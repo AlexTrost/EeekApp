@@ -1,4 +1,4 @@
-<h2 class="welcome_message"><%= "Welcome" %> </h2>
+<h2 class="welcome_message"><%= link_to "sign out", destroy_user_session_path, :method => :delete %> </h2>
 
 <div class="small_side_bar">
 	<li class="add_contact_button" class="render_contact_form_link"></li>
@@ -17,3 +17,6 @@
 	<li class="button_label" class="logout_label">logout</li>
 
 </div>
+
+
+<%= link_to "sign out", destroy_user_session_path, :method => :delete %>
