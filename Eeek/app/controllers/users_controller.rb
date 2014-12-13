@@ -1,15 +1,18 @@
 class UsersController < ApplicationController
 
 	def index
-		render action: "main"
 	end
 
 	def login
 		p "hloe" * 50
 		user = User.find_by(email: params[:email])
 		if user.password == params[:passoword]
-			redirect_to action: 'index'
+			sign_in(:user, user)
+			redirect_to controller: 'dashboard', action: 'index'
+		else 
+			"fail" * 100
 		end
+
 	end
 
 	def create
