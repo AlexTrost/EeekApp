@@ -1,0 +1,6 @@
+<div class="upload_form">
+	<%= form_for :datafile, :url => upload_path, :html => { :multipart => true }  do |f| %>
+	  <%= f.file_field 'attachment' %>
+	  <%= f.submit "Send Attachment" %>
+	<% end %>
+</div>

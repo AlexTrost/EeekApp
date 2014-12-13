@@ -7,3 +7,8 @@
     display: none;
     position: static;
 }
+
+.upload_form {
+	margin-left: 20%;
+	margin-top: 20%;
+}
