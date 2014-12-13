@@ -5,7 +5,7 @@ Rails.application.routes.draw do
 
   resources :users, only: [:index, :create, :destroy, :update]
   resources :dashboard
-  resources :upload
+  resources :uploads
 
   post 'users/login' => "users#login"
 

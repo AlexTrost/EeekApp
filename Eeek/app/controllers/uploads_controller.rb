@@ -1,4 +1,4 @@
-class UploadController < ApplicationController
+class UploadsController < ApplicationController
   
 
   def show
@@ -6,18 +6,29 @@ class UploadController < ApplicationController
     # send_data @attachment.data, :filename => @attachment.filename, :type => @attachment.content_type
   end
 
-    def create
+   def create
+    	"itworked" * 100
     return if params[:attachment].blank?
 
     @attachment = DataFile.new
-    @attachment.uploaded_file = params[:attachment]
+    @attachment.uploaded_file(data_file_params)
 
     if @attachment.save
         flash[:notice] = "Thank you for your submission..."
-        redirect_to :action => "index"
+			redirect_to controller: 'dashboard', action: 'index'
+        
     else
         flash[:error] = "There was a problem submitting your attachment."
-        render :action => "new"
+			redirect_to controller: 'dashboard', action: 'index'
+    
     end
   end
+
+  private 
+
+  def data_file_params
+    params.require(:data_file).permit(:file_name, :content_type, :data)
+  end
+
+
 end
