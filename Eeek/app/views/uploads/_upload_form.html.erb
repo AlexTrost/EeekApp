@@ -1,6 +1,13 @@
-<div class="upload_form">
-	<%= form_for :datafile, :url => uploads_path, :action => :create, :html => { :multipart => true }  do |f| %>
-	  <%= f.file_field :attachment %>
-	  <%= f.submit "Send Attachment" %>
-	<% end %>
+
+
+
+
+<div class="well">
+  <%= form_for :upload, :url => uploads_path, :action => :create, :method => :post, html: { multipart: true } do |f| %>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+    <%= f.label :attachment %>
+    <%= f.file_field :attachment %>
+    <%= f.submit "Save", class: "btn btn-primary" %>
+  <% end %>
 </div>

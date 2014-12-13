@@ -5,7 +5,15 @@ Rails.application.routes.draw do
 
   resources :users, only: [:index, :create, :destroy, :update]
   resources :dashboard
-  resources :uploads
+  # resources :uploads
+
+
+# Upload::Application.routes.draw do
+  resources :uploads, only: [:index, :new, :create, :destroy]
+  # root "resumes#index"
+# end
+
+
 
   post 'users/login' => "users#login"
 
