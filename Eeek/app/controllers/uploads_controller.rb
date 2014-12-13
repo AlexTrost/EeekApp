@@ -11,9 +11,10 @@ class UploadsController < ApplicationController
     @upload = Upload.new(upload_params)
 
     if @upload.save
-      redirect_to uploads_path, notice: "The upload #{@upload.name} has been uploaded."
+      session[:upload_success] = "Upload successful"
+      redirect_to dashboard_index_path, notice: "The upload #{@upload.name} has been uploaded."
     else
-      render "new"
+      session[:upload_error] = @upload.errors
     end
   end
 
