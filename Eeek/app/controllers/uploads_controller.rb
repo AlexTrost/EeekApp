@@ -1,4 +1,6 @@
 class UploadsController < ApplicationController
+  protect_from_forgery except: :index
+
   def index
     @uploads = Upload.all
   end
@@ -9,12 +11,16 @@ class UploadsController < ApplicationController
 
   def create
     @upload = Upload.new(upload_params)
-
-    if @upload.save
-      session[:upload_success] = "Upload successful"
-      redirect_to dashboard_index_path, notice: "The upload #{@upload.name} has been uploaded."
-    else
-      session[:upload_error] = @upload.errors
+    respond_to do |format|
+      if @upload.save
+        p "ho" * 100
+        format.js { render :upload_confirm }
+        # session[:upload_success] = "Upload successful"
+        # redirect_to dashboard_index_path, notice: "The upload #{@upload.name} has been uploaded."
+      else
+        format.js { render :upload_fail }
+        # session[:upload_error] = @upload.errors
+      end
     end
   end
 
