@@ -8,6 +8,8 @@ Rails.application.routes.draw do
 
 
   resources :uploads, only: [:index, :new, :create, :destroy]
+  
+  resources :contacts, only: [:create, :destroy, :update, :index]
 
 
 
