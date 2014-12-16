@@ -4,7 +4,6 @@ class ContactsController < ApplicationController
 	end
 
 	def create
-		p "contactyay" * 50
 		@contact = Contact.new(contact_params)
 		@contact.user_id = current_user.id
 		respond_to do |format|

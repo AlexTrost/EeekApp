@@ -2,12 +2,15 @@
 
 
 
-<div class="well">
+<div class="form new_upload_form_div">
+  <h1>Upload Something That Makes You Happy</h1>
+  <hr>
   <%= form_for :upload, :url => uploads_path, :action => :create, :method => :post, html: { multipart: true }, remote: true do |f| %>
     <%= f.label :name %>
     <%= f.text_field :name %>
     <%= f.label :attachment %>
     <%= f.file_field :attachment %>
-    <%= f.submit "Save", class: "btn btn-primary" %>
+    <hr>
+    <%= f.submit "Save", class: "btn btn-primary button" %>
   <% end %>
 </div>
