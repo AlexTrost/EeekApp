@@ -11,6 +11,7 @@ class UploadsController < ApplicationController
 
   def create
     @upload = Upload.new(upload_params)
+    @upload.user_id = current_user.id
     respond_to do |format|
       if @upload.save
         p "ho" * 100
@@ -32,6 +33,6 @@ class UploadsController < ApplicationController
 
 private
   def upload_params
-    params.require(:upload).permit(:name, :attachment)
+    params.require(:upload).permit(:name, :attachment, :user_id)
   end
 end
