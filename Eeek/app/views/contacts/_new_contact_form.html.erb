@@ -1,13 +1,15 @@
 <div class="new_contact_form_div">
   <h1>New Contact</h1>
 
-  <form action="/">
-      <hr>
-  <label id="icon" for="contact_name"><i class="icon-envelope "></i></label>
-  <input type="text" name="contact_name" id="name" placeholder="Name" required/>
-  <label id="icon" for="name"><i class="icon-user"></i></label>
-  <input type="text" name="name" id="name" placeholder="Phone Number" required/>
-   <p>Note: This contact must be able to recieve text messages.</p>
-   <a href="#" class="button">Add Contact</a>
-  </form>
+ <%= form_for :contact, :url => contacts_path, :action => :create, :method => :post, remote: true do |f| %>
+ <hr>
+    <%= f.label :j, id: "icon"%>
+    <%= f.text_field :contact_name, id: "name", value: "", placeholder: "Contact's Name"%>
+    <%= f.label :phone_number, id: "icon"%>
+    <%= f.text_field :phone_number, id: "name", value: "", placeholder: "XXXXXXXXXX" %>
+    <hr>
+    <p>Note: This contact must be able to recieve text messages.</p>
+    <%= f.submit "Save", class: "button" %>
+  <% end %>
 </div>
+

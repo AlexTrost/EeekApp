@@ -4,6 +4,16 @@ class ContactsController < ApplicationController
 	end
 
 	def create
+		p "contactyay" * 50
+		@contact = Contact.new(contact_params)
+		@contact.user_id = current_user.id
+		respond_to do |format|
+			if @contact.save
+				format.js { render :create_contact_success }
+			else
+				format.js { render :create_contact_fail }
+			end
+		end
 	end
 
 	def update
