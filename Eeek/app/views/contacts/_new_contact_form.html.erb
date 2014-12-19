@@ -1,7 +1,7 @@
 <div class="form new_contact_form_div">
   <h1>New Contact</h1>
 
- 	<%= form_for :contact, :url => contacts_path, :action => :create, :method => :post, remote: true do |f| %>
+ 	<%= form_for :contact, :url => contacts_path, :action => :create, :method => :post, html: { id: "new_contact_form" }, remote: true do |f| %>
  		<hr>
     <%= f.label :j, id: "icon"%>
     <%= f.text_field :contact_name, id: "name", value: "", placeholder: "Contact's Name"%>

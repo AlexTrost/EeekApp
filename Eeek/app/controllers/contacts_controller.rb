@@ -17,7 +17,6 @@ class ContactsController < ApplicationController
 	end
 
 	def new
-		p "new" * 50
 		respond_to do |format|
 				format.js { render :render_new_contact_form }
 		end

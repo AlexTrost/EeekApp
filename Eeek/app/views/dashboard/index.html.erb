@@ -1,6 +1,3 @@
-<%= render :partial => "uploads/upload_form" %>
-<%= render :partial => "contacts/new_contact_form" %>
-
 <div class="render_form_target_div"></div>
 
 <h2 class="welcome_message"><%="Welcome, #{@user.name}."%></h2>
@@ -15,8 +12,8 @@
 	<li class="face_icon_button"></li>
 	<li class="button_label" class="smiley_label">Feeling down?</li>
 
-	<li class="add_stuff_button"></li>
-	<li class="button_label" class="add_joy_label">add some joy</li>
+	<a href="/uploads/new" data-remote="true"><li class="add_stuff_button"></li>
+	<li class="button_label" class="add_joy_label">add some joy</li></a>
 
 	<%= link_to destroy_user_session_path, :method => :delete do %><li class="logout_button"></li>
 	<li class="button_label" class="logout_label">logout</li>

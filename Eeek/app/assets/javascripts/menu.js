@@ -1,12 +1,7 @@
-// $(document).ready(function() {
+$(document).ready(function() {
 
-// 	$(".add_contact_button").on('click', RenderAddContactForm())
+	$(".render_form_target_div").on("submit", "#new_contact_form", function(){
+		$(".new_contact_form_div").remove()
+	})
 
-// })
-
-// RenderAddContactForm() {
-// 	$.ajax({
-
-		
-// 	})
-// }
+	})
