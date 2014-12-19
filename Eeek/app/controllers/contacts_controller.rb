@@ -1,6 +1,7 @@
 class ContactsController < ApplicationController
 
 	def index
+		p "index" * 50
 	end
 
 	def create
@@ -13,6 +14,11 @@ class ContactsController < ApplicationController
 				format.js { render :create_contact_fail }
 			end
 		end
+	end
+
+	def new
+		p "new" * 50
+
 	end
 
 	def update

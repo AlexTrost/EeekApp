@@ -9,7 +9,7 @@ Rails.application.routes.draw do
 
   resources :uploads, only: [:index, :new, :create, :destroy]
   
-  resources :contacts, only: [:create, :destroy, :update, :index]
+  resources :contacts, only: [:create, :new, :destroy, :update, :index]
 
 
 
