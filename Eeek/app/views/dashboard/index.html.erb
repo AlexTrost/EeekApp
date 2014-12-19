@@ -1,11 +1,12 @@
 <%= render :partial => "uploads/upload_form" %>
 <%= render :partial => "contacts/new_contact_form" %>
 
+<div class="render_form_target_div"></div>
 
 <h2 class="welcome_message"><%="Welcome, #{@user.name}."%></h2>
 
 <div class="small_side_bar">
-	<a href="/contacts" method="post"><li class="add_contact_button" class="render_contact_form_link"></li>
+	<a href="/contacts/new" data-remote="true"><li class="add_contact_button" class="render_contact_form_link"></li>
 	<li class="button_label" class="add_contact_label">Add Contact</li></a>
 
 	<li class="distress_call_button" class="render_distress_level_form"></li>
