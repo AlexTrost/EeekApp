@@ -1,12 +1,12 @@
-$(document).ready(function() {
+// $(document).ready(function() {
 
-	$(".add_contact_button").on('click', RenderAddContactForm())
+// 	$(".add_contact_button").on('click', RenderAddContactForm())
 
-})
+// })
 
-RenderAddContactForm() {
-	$.ajax({
+// RenderAddContactForm() {
+// 	$.ajax({
 
 		
-	})
-}
+// 	})
+// }
