@@ -30,8 +30,9 @@ class UploadsController < ApplicationController
     end
   end
 
-  def show
-    HardWorker.perform_async("hey")
+  def trigger
+    p "show" * 50
+    # HardWorker.perform_async("hey")
   end
 
   def destroy

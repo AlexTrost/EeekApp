@@ -7,13 +7,14 @@ Rails.application.routes.draw do
   resources :dashboard
 
 
-  resources :uploads, only: [:index, :new, :show, :create, :destroy]
+  resources :uploads, only: [:index, :new, :create, :destroy]
   
   resources :contacts, only: [:create, :new, :destroy, :update, :index]
 
 
 
   post 'users/login' => "users#login"
+  get 'uploads/trigger' => "uploads#trigger"
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
