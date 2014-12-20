@@ -1,10 +1,10 @@
 class Feedback
   include Sidekiq::Worker
-  include Sidetiq::Schedulable
+  # include Sidetiq::Schedulable
 
-  recurrence { minutely }
+  # recurrence { minutely }
 
-  def feed_stuff_back
-    p "hello"
+  def feed_stuff_back(name, num)
+    puts "hello"
   end
 end

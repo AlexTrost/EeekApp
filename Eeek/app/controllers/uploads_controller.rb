@@ -7,7 +7,8 @@ class UploadsController < ApplicationController
   end
 
   def new
-    Feedback.feed_stuff_back
+    Feedback.perform_async("alex", 5)
+    # Feedback.feed_stuff_back
     # @upload = Upload.new
     respond_to do |format|
         format.js { render :render_new_upload_form }

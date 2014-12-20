@@ -3,6 +3,7 @@ class DashboardController < ApplicationController
 
 	def index
 		@user = current_user
+		@uploads = Upload.all
 	end
 
 end
