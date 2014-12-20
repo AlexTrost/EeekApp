@@ -1,11 +1,13 @@
 class UploadsController < ApplicationController
   protect_from_forgery except: :index
+  include 'Feedback'
 
   def index
     @uploads = Upload.all
   end
 
   def new
+    Feedback.feed_stuff_back
     # @upload = Upload.new
     respond_to do |format|
         format.js { render :render_new_upload_form }
