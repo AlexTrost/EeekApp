@@ -7,7 +7,7 @@ Rails.application.routes.draw do
   resources :dashboard
 
 
-  resources :uploads, only: [:index, :new, :create, :destroy]
+  resources :uploads, only: [:index, :new, :show, :create, :destroy]
   
   resources :contacts, only: [:create, :new, :destroy, :update, :index]
 

@@ -8,8 +8,6 @@ class UploadsController < ApplicationController
   end
 
   def new
-    # Feedback.perform_async('bob', 5)
-    HardWorker.perform_async("hey")
     # @upload = Upload.new
     respond_to do |format|
         format.js { render :render_new_upload_form }
@@ -30,6 +28,10 @@ class UploadsController < ApplicationController
         # session[:upload_error] = @upload.errors
       end
     end
+  end
+
+  def show
+    HardWorker.perform_async("hey")
   end
 
   def destroy
