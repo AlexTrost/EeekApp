@@ -1,8 +1,6 @@
 # class HardWorker
 #   include Sidekiq::Worker
-#   # # include Sidetiq::Schedulable
 
-#   # # recurrence { minutely }
 
 #   # def feed_stuff_back
 #   #   p "hello"
@@ -15,7 +13,10 @@
 
 class HardWorker
   include Sidekiq::Worker
+  include Sidetiq::Schedulable
 
+  recurrence { minutely }
+  
   def perform(input)
     p input * 20
   end

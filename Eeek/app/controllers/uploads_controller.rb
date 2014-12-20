@@ -31,8 +31,10 @@ class UploadsController < ApplicationController
   end
 
   def trigger
-    p "show" * 50
-    # HardWorker.perform_async("hey")
+    
+    respond_to do |format|
+        format.js { render :render_feed }
+    end
   end
 
   def destroy
