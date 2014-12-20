@@ -1,14 +1,15 @@
 class UploadsController < ApplicationController
   protect_from_forgery except: :index
-  include 'Feedback'
+  # include 'Feedback'
+  # HardWorker.perform_async('bob', 5)
 
   def index
     @uploads = Upload.all
   end
 
   def new
-    Feedback.perform_async("alex", 5)
-    # Feedback.feed_stuff_back
+    # Feedback.perform_async('bob', 5)
+    HardWorker.perform_async("hey")
     # @upload = Upload.new
     respond_to do |format|
         format.js { render :render_new_upload_form }
