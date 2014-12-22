@@ -21,14 +21,10 @@ ActiveRecord::Schema.define(version: 20141214185850) do
     t.datetime "updated_at"
   end
 
-  create_table "data_files", force: true do |t|
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
   create_table "uploads", force: true do |t|
     t.string   "name"
     t.string   "attachment"
+    t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

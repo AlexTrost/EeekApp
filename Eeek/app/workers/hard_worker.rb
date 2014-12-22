@@ -18,6 +18,8 @@ class HardWorker
   recurrence { minutely }
   
   def perform(input)
-    p input * 20
+    uploads = Upload.where(user_id: current_user.id)
+    num = rand(1..uploads.length)
+    @upload = uploads[num]
   end
 end

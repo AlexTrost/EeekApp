@@ -15,6 +15,8 @@ class UploadsController < ApplicationController
   end
 
   def create
+    p current_user * 80
+    param[:user_id] = current_user.id
     @upload = Upload.new(upload_params)
     @upload.user_id = current_user.id
     respond_to do |format|
@@ -31,7 +33,11 @@ class UploadsController < ApplicationController
   end
 
   def trigger
-    
+    p current_user.id * 100
+    uploads = Upload.where(user_id: current_user.id)
+    num = rand(1..uploads.length)
+    @upload = uploads[num]
+    # HardWorker.perform_async("howdy")
     respond_to do |format|
         format.js { render :render_feed }
     end
