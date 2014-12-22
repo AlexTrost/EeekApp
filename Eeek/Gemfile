@@ -21,6 +21,7 @@ gem 'devise'
 gem 'carrierwave'
 
 gem 'sidekiq'
+gem 'sidetiq'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
