@@ -103,3 +103,8 @@ body {
 	padding: none;
 	font-family: bold;
 }
+
+.coming_soon_div {
+	text-align: center;
+	margin: 10% 0 auto;
+}

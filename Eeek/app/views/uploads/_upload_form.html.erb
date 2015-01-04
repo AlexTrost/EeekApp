@@ -1,7 +1,7 @@
 <div class="form new_upload_form_div">
   <h1>Upload Something That Makes You Happy</h1>
   <hr>
-  <%= form_for :upload, :url => uploads_path, :action => :create, :method => :post, html: { multipart: true, id: "new_upload_form" }, remote: true do |f| %>
+  <%= form_for :upload, :url => uploads_path, :method => :post, html: { multipart: true, id: "new_upload_form" }, remote: true do |f| %>
     <%= f.label :name %>
     <%= f.text_field :name %>
     <%= f.label :attachment %>

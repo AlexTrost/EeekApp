@@ -1,5 +1,5 @@
 class UploadsController < ApplicationController
-  protect_from_forgery except: :index
+  protect_from_forgery except: :create
   # include 'Feedback'
   # HardWorker.perform_async('bob', 5)
 
@@ -15,14 +15,13 @@ class UploadsController < ApplicationController
   end
 
   def create
-    p current_user * 80
-    param[:user_id] = current_user.id
+    params[:user_id] = current_user.id
     @upload = Upload.new(upload_params)
-    @upload.user_id = current_user.id
+    # @upload.user_id = current_user.id
     respond_to do |format|
       if @upload.save
         p "ho" * 100
-        format.js { render :upload_confirm }
+        format.js { render :'upload_confirm' }
         # session[:upload_success] = "Upload successful"
         # redirect_to dashboard_index_path, notice: "The upload #{@upload.name} has been uploaded."
       else

@@ -1,9 +1,10 @@
 class HomeController < ApplicationController
 
 	def index
-		if user_signed_in?
-			redirect_to :controller => 'dashboard', :action => 'index'
-		end
+		render :coming_soon
+		# if user_signed_in?
+		# 	redirect_to :controller => 'dashboard', :action => 'index'
+		# end
 	end
 
 end
