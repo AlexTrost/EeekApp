@@ -12,3 +12,8 @@
 	margin-left: 20%;
 	margin-top: 20%;
 }
+
+.upload_target_div {
+	border: 2px black solid;
+	margin: 4% 25% 0 25%;
+}

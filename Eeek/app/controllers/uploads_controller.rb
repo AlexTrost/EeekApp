@@ -37,7 +37,8 @@ class UploadsController < ApplicationController
     @upload = uploads[num]
     # HardWorker.perform_async("howdy")
     respond_to do |format|
-        format.js { render :render_feed }
+        # format.js { render :render_feed }
+        format.html { render :html_feed}
     end
   end
 
