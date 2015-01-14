@@ -5,6 +5,7 @@ class UploadsController < ApplicationController
 
   def index
     @uploads = Upload.all
+    @upload = Upload.last
   end
 
   def new
@@ -38,7 +39,7 @@ class UploadsController < ApplicationController
     # HardWorker.perform_async("howdy")
     respond_to do |format|
         # format.js { render :render_feed }
-        format.html { render :html_feed}
+        format.html {redirect_to dashboard_index_path}
     end
   end
 
