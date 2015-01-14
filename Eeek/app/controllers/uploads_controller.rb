@@ -5,7 +5,6 @@ class UploadsController < ApplicationController
 
   def index
     @uploads = Upload.all
-    @upload = Upload.last
   end
 
   def new
@@ -32,7 +31,6 @@ class UploadsController < ApplicationController
   end
 
   def trigger
-    p current_user.id * 100
     uploads = Upload.where(user_id: current_user.id)
     num = rand(1..uploads.length)
     @upload = uploads[num]
