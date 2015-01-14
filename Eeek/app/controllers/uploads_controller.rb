@@ -21,12 +21,11 @@ class UploadsController < ApplicationController
     respond_to do |format|
       if @upload.save
         p "ho" * 100
-        format.js { render :'upload_confirm' }
-        # session[:upload_success] = "Upload successful"
-        # redirect_to dashboard_index_path, notice: "The upload #{@upload.name} has been uploaded."
+        # format.js { render :'upload_confirm' }
+        # format.html { render :'dashboard/index' }
+        format.html {redirect_to dashboard_index_path, notice: "The upload #{@upload.name} has been uploaded."}
       else
         format.js { render :upload_fail }
-        # session[:upload_error] = @upload.errors
       end
     end
   end
