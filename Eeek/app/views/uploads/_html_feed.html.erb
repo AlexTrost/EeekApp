@@ -1,5 +1,5 @@
 <h1>hi</h1>
 
-	<% num = rand(1..Upload.all.length) %>
-  <% @upload = Upload.all[num] %>
-	<img src=<%= @upload.attachment %> >
+	<% if @upload %>
+		<img src=<%= @upload.attachment %> >
+	<% end %>

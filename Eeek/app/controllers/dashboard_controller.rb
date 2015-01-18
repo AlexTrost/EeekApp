@@ -3,7 +3,11 @@ class DashboardController < ApplicationController
 
 	def index
 		@user = current_user
-		@uploads = Upload.all
+		@uploads = Upload.where(user_id: @user.id)
+		# if @uploads.length > 0
+			num = rand(1..@uploads.length)
+			@upload = @uploads[num]
+		# end 
 	end
 
 end

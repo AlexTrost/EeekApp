@@ -17,10 +17,9 @@ class UploadsController < ApplicationController
   def create
     params[:user_id] = current_user.id
     @upload = Upload.new(upload_params)
-    # @upload.user_id = current_user.id
+    @upload.user_id = current_user.id
     respond_to do |format|
       if @upload.save
-        p "ho" * 100
         # format.js { render :'upload_confirm' }
         # format.html { render :'dashboard/index' }
         format.html {redirect_to dashboard_index_path, notice: "The upload #{@upload.name} has been uploaded."}
@@ -36,7 +35,7 @@ class UploadsController < ApplicationController
     @upload = uploads[num]
     # HardWorker.perform_async("howdy")
     respond_to do |format|
-        # format.js { render :render_feed }
+        format.js { render :render_feed }
         format.html {redirect_to dashboard_index_path}
     end
   end

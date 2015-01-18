@@ -1,2 +1,3 @@
-<%= "hello" %>
-<%= @upload %>
+<% if @upload %>
+		<img src=<%= @upload.attachment %> >
+	<% end %>
