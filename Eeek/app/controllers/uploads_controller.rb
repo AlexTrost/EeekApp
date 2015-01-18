@@ -4,7 +4,8 @@ class UploadsController < ApplicationController
   # HardWorker.perform_async('bob', 5)
 
   def index
-    @uploads = Upload.all
+    @user = current_user
+    @uploads = Upload.where(user_id: @user.id)
   end
 
   def new
