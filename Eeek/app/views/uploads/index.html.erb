@@ -1,5 +1,7 @@
 <h1> All of your things here </h1>
 
-<% @uploads.each do |upload| %>
-	<img src=<%= upload.attachment %> class="thumbnail">
-<% end %>
+	<% @uploads.each do |upload| %>
+		
+		<img src=<%= upload.attachment %> class="thumbnail">
+		<%= link_to "Delete", upload_path(upload), method: :delete %>
+	<% end %>
