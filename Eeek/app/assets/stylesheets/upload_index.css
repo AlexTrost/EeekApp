@@ -1,4 +1,8 @@
 .thumbnail {
 	height: 20em;
-	weight: 20em;
+}
+
+.thumbnail:hover { 
+  opacity: .4; 
+  /*border: 4px black solid;*/
 }
