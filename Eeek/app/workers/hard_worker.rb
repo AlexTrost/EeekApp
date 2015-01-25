@@ -17,9 +17,14 @@ class HardWorker
 
   recurrence { minutely }
   
-  def perform(input)
-    uploads = Upload.where(user_id: current_user.id)
+  def perform(user_id)
+    uploads = Upload.where(user_id: user_id)
     num = rand(1..uploads.length)
     @upload = uploads[num]
+    p "Alex!" * 100
+  #   respond_to do |format|
+  #       format.js { render :render_feed }
+  #       format.html {redirect_to dashboard_index_path}
+  #   end
   end
-end
+end 

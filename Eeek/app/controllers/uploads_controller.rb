@@ -31,10 +31,12 @@ class UploadsController < ApplicationController
   end
 
   def trigger
+    p "hihihihih"
     uploads = Upload.where(user_id: current_user.id)
     num = rand(1..uploads.length)
     @upload = uploads[num]
-    # HardWorker.perform_async("howdy")
+    current_id = current_user.id
+    HardWorker.perform_async(current_id)
     respond_to do |format|
         format.js { render :render_feed }
         format.html {redirect_to dashboard_index_path}
