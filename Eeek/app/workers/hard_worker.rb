@@ -10,9 +10,10 @@ class HardWorker
     upload = uploads[num]
     # p "Alex!" * 100
     p uploads.length.to_s * 100
-  #   respond_to do |format|
-  #       format.js { render :render_feed }
-  #       format.html {redirect_to dashboard_index_path}
-  #   end
+    render :render_feed 
+    # respond_to do |format|
+        # format.js { render :render_feed }
+        # format.html {redirect_to dashboard_index_path}
+    # end
   end
 end 
