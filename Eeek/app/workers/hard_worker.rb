@@ -19,8 +19,8 @@ class HardWorker
   
   def perform(user_id)
     uploads = Upload.where(user_id: user_id)
-    num = rand(1..uploads.length)
-    # upload = uploads[num]
+    num = rand(0..uploads.length)
+    upload = uploads[num]
     # p "Alex!" * 100
     p uploads.length.to_s * 100
   #   respond_to do |format|
