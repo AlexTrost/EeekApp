@@ -13,4 +13,10 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require jquery-ui
+//= require jquery-ui/effect.all
+//= require jquery-ui/effect-bounce
+//= require owl.carousel
+
+
 //= require_tree .
