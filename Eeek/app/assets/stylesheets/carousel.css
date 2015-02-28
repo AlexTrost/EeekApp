@@ -1,4 +1,10 @@
-#favorite_songs_carousel .item {
+.carousel_div {
+  border: 3px blue solid;
+  width: 100%;
+}
+
+.carousel_div .upload_div {
+  border: 2px orange solid;
   padding: 3px 0px;
   margin: 5px;
   color: #080308;
@@ -57,8 +63,3 @@
 .customNavigation a:hover {
   color: #75acd1; }
 
-.upload_div {
-  margin: 1px 4px 1px 4px;
-  padding: 1px 4px 1px 4px;
-  border: 2px orange solid;
-}

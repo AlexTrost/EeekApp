@@ -40,7 +40,7 @@ $(document).ready(function() {
 
   }
 
-carouselMagic("#upload_carousel", 6)
+carouselMagic("#upload_carousel", 1)
 carouselMagic("#my_rooms_carousel", 5)
 carouselMagic("#joined_rooms_carousel", 5)
 
