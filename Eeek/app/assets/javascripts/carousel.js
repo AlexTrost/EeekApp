@@ -11,7 +11,7 @@ $(document).ready(function() {
         itemsMobile : false // itemsMobile disabled - inherit from itemsTablet option
     });
 
-    owl.trigger('owl.play',4500)
+    owl.trigger('owl.play',8500)
     // Custom Navigation Events
     $(".next").click(function(){
       owl.trigger('owl.next');
@@ -41,5 +41,4 @@ $(document).ready(function() {
   }
 
 carouselMagic("#upload_carousel", 1)
-
 });
