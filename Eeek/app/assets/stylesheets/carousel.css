@@ -56,3 +56,9 @@
 
 .customNavigation a:hover {
   color: #75acd1; }
+
+.upload_div {
+  margin: 1px 4px 1px 4px;
+  padding: 1px 4px 1px 4px;
+  border: 2px orange solid;
+}

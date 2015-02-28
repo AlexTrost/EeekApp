@@ -15,49 +15,15 @@
         </ol>
         <!-- Carousel items -->
         <%= render partial: 'uploads/carousel' %>
-        <!-- Carousel nav -->
-        <a class="carousel-control left">
-          <span class="glyphicon glyphicon-chevron-left"></span>
-        </a>
-        <a class="carousel-control right">
-          <span class="glyphicon glyphicon-chevron-right"></span>
-        </a>
-      </div>
-    </div>
-    <!-- create -->
-    <div id="create_note" class=<%="hello"%> >
-      <a href="/users/<%=@user.id%>/notebook/new">Create</a>
-    </div>
-    <!-- edit note  -->
-    <div id="edit">
-      <a href="<%=@user.id%>"> Save </a>
-    </div>
-    <!-- delete note -->
-    <div id="delete">
-      <a href="/users/<%=@user.id%>/notebook/<%=@user.id%>/delete"> Delete </a>
-    </div>
-    <!-- new note -->
-    <div id="new_note">
-      <button type="submit">New Note</button>
-    </div>
-  </div>
-  <div id="scroller">
-    <div id="past_page">
-    </div>
-    <div id="current_page">
-    </div>
-    <div id="next_page">
-    </div>
-  </div>
-</div>
+       
 <!-- <h2 class="welcome_message">< % = "Welcome."% ></h2> -->
 
 
 
-<div class="upload_target_div"><%= render partial: 'uploads/html_feed' %></div>
+<!-- <div class="upload_target_div">< % = render partial: 'uploads/html_feed' % ></div> -->
 
 <%= render 'top_bar' %>
-<!-- < % = render 'sidebar' % > -->
+<%= render 'sidebar' %>
 
 
 
