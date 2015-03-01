@@ -18,7 +18,7 @@ $(document).ready(function() {
     })
     $(".prev").click(function(){
       owl.trigger('owl.prev');
-    })m
+    })
     $(".play").click(function(){
       owl.trigger('owl.play',2200); //owl.play event accept autoPlay speed as second parameter
     })
