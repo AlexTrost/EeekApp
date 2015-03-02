@@ -19,7 +19,6 @@ class UploadsController < ApplicationController
   def create
     params[:user_id] = current_user.id
     @upload = Upload.new(upload_params)
-    p params
     @upload.user_id = current_user.id
     respond_to do |format|
       if @upload.save
