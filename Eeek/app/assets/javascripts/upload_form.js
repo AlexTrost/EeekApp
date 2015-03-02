@@ -1,7 +1,7 @@
 $(document).ready(function() {
 	
 
-	$("#text_checkbox").on("click", function() {
+	$("body").on("click", "#text_checkbox", function() {
 		alert("hi")
 		$("#new_upload_form").fadeIn()
 		$("#new_text_form").fadeOut()
@@ -9,7 +9,7 @@ $(document).ready(function() {
 		$("#text_checkbox").css("background-color", "none")
 	})
 
-	$(" #upload_checkbox").on("click", function() {
+	$("body").on("click", "#upload_checkbox", function() {
 		$("#new_text_form").fadeIn()
 		$("#new_upload_form").fadeOut()
 		$("#text_checkbox").css("background-color", "yellow")
