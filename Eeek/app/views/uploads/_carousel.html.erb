@@ -2,7 +2,11 @@
 	<div id="upload_carousel" class="owl-carousel owl-theme">
 	  <% @uploads.each do |upload| %>
 	  	<div class="upload_div"> 
-	  		<img src=<%= upload.attachment %> > 
+	  		<% if upload.attachment %>
+	  			<img src=<%= upload.attachment %> > 
+	  		<% else %>
+	  			<p><%= upload.text %></p>
+	  		<% end %>
 	  	</div>
 	  <% end %>
 	</div>
