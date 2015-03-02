@@ -114,3 +114,12 @@ pre, form, fieldset, input, textarea, p, blockquote, th, td {
 #new_text_form {
   display: none;
 }
+
+#checkbox_list {
+  list-style-type: none;
+}
+
+#checkbox_list .checkbox{
+  display: inline;
+  border: 2px blue solid;
+}
