@@ -10,14 +10,20 @@
 }
 
 .carousel_div #upload_carousel .upload_div {
-  border: 2px orange solid;
-  width: 80%;
-  height: 40%;
+  border: 6px black solid;
+  width: 80em;
+  height: 40em;
   margin: 5em auto;
-   }
+}
 
 .owl-carousel {
   display: inline-block; }
 
 
+#upload_carousel img {
+  border: 3px green solid;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
 
