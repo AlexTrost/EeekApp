@@ -23,6 +23,7 @@ ActiveRecord::Schema.define(version: 20141214185850) do
 
   create_table "uploads", force: true do |t|
     t.string   "name"
+    t.text     "text"
     t.string   "attachment"
     t.integer  "user_id"
     t.datetime "created_at"

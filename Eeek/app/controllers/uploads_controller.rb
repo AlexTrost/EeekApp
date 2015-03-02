@@ -9,6 +9,7 @@ class UploadsController < ApplicationController
   end
 
   def new
+    p "hohoho"
     # @upload = Upload.new
     respond_to do |format|
         format.js { render :render_new_upload_form }
@@ -18,6 +19,7 @@ class UploadsController < ApplicationController
   def create
     params[:user_id] = current_user.id
     @upload = Upload.new(upload_params)
+    p params
     @upload.user_id = current_user.id
     respond_to do |format|
       if @upload.save
@@ -51,6 +53,6 @@ class UploadsController < ApplicationController
 
 private
   def upload_params
-    params.require(:upload).permit(:name, :attachment, :user_id)
+    params.require(:upload).permit(:name, :attachment, :text, :user_id)
   end
 end
