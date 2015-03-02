@@ -7,5 +7,11 @@ class User < ActiveRecord::Base
   has_many :contacts
   has_many :uploads
 
+  after_create :complimentary_goodstuff
+
+  def complimentary_goodstuff
+  	Upload.create(user_id: self.id)
+  end
+
 
 end
