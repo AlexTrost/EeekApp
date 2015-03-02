@@ -9,7 +9,7 @@ $(document).ready(function() {
 		$("#text_checkbox").css("background-color", "none")
 	})
 
-	$("#upload_checkbox").on("click", function() {
+	$(" #upload_checkbox").on("click", function() {
 		$("#new_text_form").fadeIn()
 		$("#new_upload_form").fadeOut()
 		$("#text_checkbox").css("background-color", "yellow")
