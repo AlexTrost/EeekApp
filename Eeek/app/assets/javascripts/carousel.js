@@ -40,5 +40,27 @@ $(document).ready(function() {
 
   }
 
+  function fontSize() {
+    var $quotes = $("#upload_carousel p");
+    
+    for (var i = 0; i < $quotes.length; i++) {
+      var $quote = $($quotes[i])
+      var $numWords = $quote.text().split(" ").length;
+        if (($numWords >= 1) && ($numWords < 25)) {
+            $quote.css("font-size", "50px");
+        }
+        else if (($numWords >= 25) && ($numWords < 50)) {
+            $quote.css("font-size", "40px");
+        }
+        else if (($numWords >= 50) && ($numWords < 100)) {
+            $quote.css("font-size", "30px");
+        }
+        else {
+            $quote.css("font-size", "25px");
+        }
+    }
+  }
+
+fontSize()
 carouselMagic("#upload_carousel", 1)
 });
