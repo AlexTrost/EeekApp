@@ -1,30 +1,30 @@
-<div class="form new_upload_form_div">
-  <h1>Upload Something That Makes You Happy</h1>
-  <hr>
-
-  <ul id="checkbox_list">
-    <li id="text_checkbox" class="checkbox">Text Entry </li>
-    <li id="upload_checkbox" class="checkbox">Upload </li>
-  </ul>
-
-
-  <hr>
-  <%= form_for :upload, :url => uploads_path, :method => :post, html: { multipart: true, id: "new_text_form" }, remote: true do |f| %>
-    <%= f.label :name %>
-    <%= f.text_field :name %>
-    <%= f.text_field :text %>
+<div id="side_bar">  
+  <div class="form new_upload_form_div">
+    <h1>Upload Something That Makes You Happy</h1>
     <hr>
-    <%= f.submit "Save", class: "btn btn-primary button" %>
-  <% end %>
 
-  <%= form_for :upload, :url => uploads_path, :method => :post, html: { multipart: true, id: "new_upload_form" }, remote: true do |f| %>
-    <%= f.label :name %>
-    <%= f.text_field :name %>
-    <%= f.label :attachment %>
-    <%= f.file_field :attachment %>
+    <ul id="checkbox_list">
+      <li id="text_checkbox" class="checkbox">Text Entry </li>
+      <li id="upload_checkbox" class="checkbox">Upload </li>
+    </ul>
+
+
     <hr>
-    <%= f.submit "Save", class: "btn btn-primary button" %>
-  <% end %> 
+    <%= form_for :upload, :url => uploads_path, :method => :post, html: { multipart: true, id: "new_text_form" }, remote: true do |f| %>
+      <%= f.label :name %>
+      <%= f.text_field :name %>
+      <%= f.text_field :text %>
+      <hr>
+      <%= f.submit "Save", class: "btn btn-primary button" %>
+    <% end %>
 
-
+    <%= form_for :upload, :url => uploads_path, :method => :post, html: { multipart: true, id: "new_upload_form" }, remote: true do |f| %>
+      <%= f.label :name %>
+      <%= f.text_field :name %>
+      <%= f.label :attachment %>
+      <%= f.file_field :attachment %>
+      <hr>
+      <%= f.submit "Save", class: "btn btn-primary button" %>
+    <% end %> 
+  </div>
 </div>

@@ -22,11 +22,11 @@ $(document).ready(function() {
 
 	function formSideMenu() {
 		$("#upload_button").on("click" function() {
-			if (side bar is display none) {
-				side bar slide inwards
-			}
-			else {
-				slide bar out
+			var $sidebar = $("#side_bar")
+			if ($sidebar.is(":visable")) {
+				$sidebar
+			} else {
+				$sidebar
 			}
 		})
 	}
