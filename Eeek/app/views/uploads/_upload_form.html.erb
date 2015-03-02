@@ -1,6 +1,14 @@
 <div class="form new_upload_form_div">
   <h1>Upload Something That Makes You Happy</h1>
   <hr>
+
+  <form>
+    <input type="radio" id="text_radio"> Text Entry
+    <input type="radio" id="upload_radio"> Upload 
+  </form>
+
+  <hr>
+
   <%= form_for :upload, :url => uploads_path, :method => :post, html: { multipart: true, id: "new_upload_form" }, remote: true do |f| %>
     <%= f.label :name %>
     <%= f.text_field :name %>
