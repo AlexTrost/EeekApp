@@ -10,7 +10,7 @@ class User < ActiveRecord::Base
   after_create :complimentary_goodstuff
 
   def complimentary_goodstuff
-  	Upload.create(user_id: self.id)
+  	Upload.create(user_id: self.id, text: "You've got a great smile.")
   end
 
 
