@@ -21,17 +21,18 @@ $(document).ready(function() {
 	}	
 
 	function formSideMenu() {
-		$("#upload_button").on("click" function() {
+		$("#upload_button").on("click", function(e) {
+			e.preventDefault()
 			var $sidebar = $("#side_bar")
-			if ($sidebar.is(":visable")) {
-				$sidebar
+			if ($sidebar.is(":visible")) {
+				$sidebar.hide("slide", { direction: "right" }, 2000);
 			} else {
-				$sidebar
+				$sidebar.show("slide", { direction: "right" }, 1000);
 			}
 		})
 	}
 	
-	
+	formSideMenu()
 	renderUploadForm()
 	renderTextForm()
 })

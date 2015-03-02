@@ -1,0 +1,9 @@
+#side_bar {
+		top:5%;
+    /*left:100%;*/
+    right:0;
+    height: 100%;
+    position: fixed;
+    border: 4px purple solid;
+    background-color: blue;
+}
