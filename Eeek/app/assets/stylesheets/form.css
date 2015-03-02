@@ -106,3 +106,11 @@ pre, form, fieldset, input, textarea, p, blockquote, th, td {
   box-shadow: none;
   
 }
+
+#new_upload_form {
+  display: none;
+}
+
+#new_text_form {
+  display: none;
+}

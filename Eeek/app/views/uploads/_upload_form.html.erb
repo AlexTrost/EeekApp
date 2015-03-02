@@ -15,6 +15,12 @@
     <%= f.label :attachment %>
     <%= f.file_field :attachment %>
     <hr>
+    <%= f.submit "Save", class: "btn btn-primary button" %>
+  <% end %> 
+
+  <%= form_for :upload, :url => uploads_path, :method => :post, html: { multipart: true, id: "new_text_form" }, remote: true do |f| %>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
     <%= f.text_field :text %>
     <hr>
     <%= f.submit "Save", class: "btn btn-primary button" %>
