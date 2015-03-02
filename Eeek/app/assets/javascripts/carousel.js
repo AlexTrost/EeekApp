@@ -28,21 +28,19 @@ $(document).ready(function() {
 
     $(".item").hover( handlerIn, handlerOut )
 
-  function handlerIn() {
-    owl.trigger('owl.stop');
-    $(this).css("border", "8px blue solid")
-  }
+    function handlerIn() {
+      owl.trigger('owl.stop');
+      $(this).css("border", "8px blue solid")
+    }
 
-  function handlerOut() {
-    owl.trigger('owl.play',2500)
-    $(this).css("border", "0px blue solid")
-  }
-
+    function handlerOut() {
+      owl.trigger('owl.play',2500)
+      $(this).css("border", "0px blue solid")
+    }
   }
 
   function fontSize() {
     var $quotes = $("#upload_carousel p");
-    
     for (var i = 0; i < $quotes.length; i++) {
       var $quote = $($quotes[i])
       var $numWords = $quote.text().split(" ").length;
