@@ -17,10 +17,10 @@
 		<% end %>
 	</ul>
 
+	<hr>
 <h1> All of the things that came with your account here </h1>
-
 	<ul class="thumbnail_ul">
-		<% @uploads.each do |upload| %>
+		<% @uploads[0..3].each do |upload| %>
 			<li class="thumbnail_li">
 				<h3 class="hidden_thumbnail_message">Click to enlarge</h3>
 				<% if upload.text %>
