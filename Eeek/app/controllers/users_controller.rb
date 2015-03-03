@@ -13,6 +13,7 @@ class UsersController < ApplicationController
 	end
 
 	def create	
+		User.
 	end
 
 	def destory

@@ -7,10 +7,11 @@ class User < ActiveRecord::Base
   has_many :contacts
   has_many :uploads
 
-  after_create :complimentary_goodstuff
+  after_validation :complimentary_goodstuff
 
   def complimentary_goodstuff
-  	Upload.create(user_id: self.id, text: "You've got a great smile.")
+    p "8" * 80
+    Upload.create(user_id: self.id, name:"on the house", text: "You've got a great while.")
   end
 
 
