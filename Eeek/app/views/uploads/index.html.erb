@@ -2,14 +2,18 @@
 
 <h1> All of your things here </h1>
 
-	<% @uploads.each do |upload| %>
-		<% if upload.text %>
-			<p class="thumbnail"><%= upload.text %></p>
-			<%= link_to "Delete", upload_path(upload), method: :delete %>
-		<% else  %>
-			<img src=<%= upload.attachment %> class="thumbnail">
-			<%= link_to "Delete", upload_path(upload), method: :delete %>
+	<ul class="thumbnail_ul">
+		<% @uploads.each do |upload| %>
+			<li class="thumbnail_li">
+				<% if upload.text %>
+					<p class="thumbnail text_thumbnail"><%= upload.text %></p>
+					<%= link_to "Delete", upload_path(upload), method: :delete %>
+				<% else  %>
+					<img src=<%= upload.attachment %> class="thumbnail">
+					<%= link_to "Delete", upload_path(upload), method: :delete %>
+				<% end %>
+			</li>
 		<% end %>
-	<% end %>
+	</ul>
 
 				

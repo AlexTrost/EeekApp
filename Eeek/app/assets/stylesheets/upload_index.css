@@ -1,3 +1,13 @@
+.thumbnail_ul {
+	list-style-type: none;
+}
+
+.thumbnail_li {
+	display: inline-block;
+	border: 3px black solid;
+	margin: 10px 3px 0 0;
+}
+
 .thumbnail {
 	height: 20em;
 }
@@ -5,4 +15,8 @@
 .thumbnail:hover { 
   opacity: .4; 
   /*border: 4px black solid;*/
+}
+
+.text_thumbnail {
+	width: 30em;
 }
