@@ -20,3 +20,16 @@
 .text_thumbnail {
 	width: 30em;
 }
+
+.hidden_thumbnail_message {
+	position: absolute;
+	line-height: 8em;
+	color: red;
+	font-size: 40px;
+	display: none;
+ }
+
+ .hidden_thumbnail_message:hover {
+ 	display: inline;
+
+ }
