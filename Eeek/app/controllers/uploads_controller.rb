@@ -6,6 +6,7 @@ class UploadsController < ApplicationController
   def index
     @user = current_user
     @uploads = Upload.where(user_id: @user.id)
+    @complimentary_uploads = Upload.where(user_id: @user.id, complimentary: "true")
   end
 
   def new
