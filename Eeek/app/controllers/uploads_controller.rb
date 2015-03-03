@@ -9,7 +9,6 @@ class UploadsController < ApplicationController
   end
 
   def new
-    p "hohoho"
     # @upload = Upload.new
     respond_to do |format|
         format.js { render :render_new_upload_form }
@@ -32,7 +31,6 @@ class UploadsController < ApplicationController
   end
 
   def trigger
-    p "hihihihih"
     uploads = Upload.where(user_id: current_user.id)
     num = rand(1..uploads.length)
     @upload = uploads[num]

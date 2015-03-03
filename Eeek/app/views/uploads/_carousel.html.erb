@@ -1,6 +1,6 @@
 <div class="carousel_div">
 	<div id="upload_carousel" class="owl-carousel owl-theme">
-	  <% @uploads.each do |upload| %>
+	  <% @uploads.shuffle.each do |upload| %>
 	  	<div class="upload_div"> 
 	  		<% if upload.text %>
 	  			<p><%= upload.text %></p>
