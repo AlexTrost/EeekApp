@@ -1,5 +1,7 @@
 class UploadsController < ApplicationController
   protect_from_forgery except: :create
+  before_filter :authenticate_user!
+  
   # include 'Feedback'
   # HardWorker.perform_async('bob', 5)
 
