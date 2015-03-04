@@ -24,7 +24,7 @@
 #upload_carousel img {
   border: 3px green solid;
   max-width: 100%;
-  height: auto;
+  max-height: 39em;
   display: table-cell;
   vertical-align: middle;
   margin-left: auto;
