@@ -25,6 +25,7 @@ ActiveRecord::Schema.define(version: 20141214185850) do
     t.string   "name"
     t.text     "text"
     t.string   "attachment"
+    t.string   "complimentary"
     t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
