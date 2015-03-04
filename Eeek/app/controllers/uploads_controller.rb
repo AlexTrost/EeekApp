@@ -18,7 +18,7 @@ class UploadsController < ApplicationController
   end
 
   def new
-    # @upload = Upload.new
+    #  @upload = Upload.new
     respond_to do |format|
         format.js { render :render_new_upload_form }
     end
