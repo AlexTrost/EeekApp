@@ -5,6 +5,7 @@ Rails.application.routes.draw do
 
   resources :users, only: [:index, :create, :destroy, :update]
   resources :dashboard
+  resources :welcome, only: [:index]
 
 
   resources :uploads, only: [:index, :new, :create, :destroy]
