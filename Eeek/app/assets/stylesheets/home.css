@@ -1,0 +1,7 @@
+.home_container .welcome_circle {
+	height: 30em;
+	width: 30em;
+	background-color: gray;
+	border: 2px black solid;
+	border-radius: 100;
+}
