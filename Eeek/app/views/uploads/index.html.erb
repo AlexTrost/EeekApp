@@ -3,7 +3,7 @@
 <h1> All of your things here </h1>
 
 	<ul class="thumbnail_ul">
-		<% if @user_uploads %>
+		<% if @user_uploads && @user_uploads.length > 0 %>
 			<% @user_uploads.each do |upload| %>
 				<li class="thumbnail_li">
 					<h3 class="hidden_thumbnail_message">Click to enlarge</h3>
@@ -16,6 +16,9 @@
 					<% end %>
 				</li>
 			<% end %>
+		<% else %>
+			<hr>
+			<p>You haven't uploaded anything yet! <br> Click the link in the top bar to get started.</p>
 		<% end %>
 	</ul>
 
