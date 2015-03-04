@@ -6,7 +6,15 @@ class UploadsController < ApplicationController
   def index
     @user = current_user
     @uploads = Upload.where(user_id: @user.id)
-    @complimentary_uploads = Upload.where(user_id: @user.id, complimentary: "true")
+    @user_uploads = []
+    @complimentary_uploads = []
+    @uploads.each do |upload| 
+      if upload.complimentary == "true" 
+        @complimentary_uploads << upload
+      else
+        @user_uploads << upload
+      end
+    end
   end
 
   def new
