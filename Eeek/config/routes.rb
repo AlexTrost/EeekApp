@@ -1,11 +1,11 @@
 Rails.application.routes.draw do
   devise_for :users
  
-  root 'home#index'
+  root 'login#index'
 
   resources :users, only: [:index, :create, :destroy, :update]
   resources :dashboard
-  resources :welcome, only: [:index]
+  resources :home, only: [:index]
 
 
   resources :uploads, only: [:index, :new, :create, :destroy]
