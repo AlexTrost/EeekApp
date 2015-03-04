@@ -7,7 +7,7 @@ class UsersController < ApplicationController
 		user = User.find_by(email: params[:email])
 		if user.password == params[:passoword]
 			sign_in(:user, user)
-			redirect_to controller: 'dashboard', action: 'index'
+			redirect_to controller: 'home', action: 'index'
 		end
 
 	end
