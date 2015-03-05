@@ -41,17 +41,17 @@ class UploadsController < ApplicationController
     end
   end
 
-  def trigger
-    uploads = Upload.where(user_id: current_user.id)
-    num = rand(1..uploads.length)
-    @upload = uploads[num]
-    current_id = current_user.id
-    HardWorker.perform_async(current_id)
-    respond_to do |format|
-        format.js { render :render_feed }
-        format.html {redirect_to dashboard_index_path}
-    end
-  end
+  # def trigger
+  #   uploads = Upload.where(user_id: current_user.id)
+  #   num = rand(1..uploads.length)
+  #   @upload = uploads[num]
+  #   current_id = current_user.id
+  #   HardWorker.perform_async(current_id)
+  #   respond_to do |format|
+  #       format.js { render :render_feed }
+  #       format.html {redirect_to dashboard_index_path}
+  #   end
+  # end
 
   def destroy
     @upload = Upload.find(params[:id])
