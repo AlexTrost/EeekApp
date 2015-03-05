@@ -63,16 +63,6 @@
         null,
         null,
         null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
         null
       ],
       "/Users/alextrost/Desktop/Coding/apps/Eeek/EeekApp/Eeek/app/controllers/dashboard_controller.rb": [
@@ -91,6 +81,21 @@
         null,
         1,
         null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
         null
       ],
       "/Users/alextrost/Desktop/Coding/apps/Eeek/EeekApp/Eeek/app/controllers/home_controller.rb": [
@@ -98,7 +103,7 @@
         1,
         null,
         1,
-        0,
+        1,
         null,
         null,
         null
@@ -455,6 +460,6 @@
         null
       ]
     },
-    "timestamp": 1425518637
+    "timestamp": 1425575590
   }
 }
