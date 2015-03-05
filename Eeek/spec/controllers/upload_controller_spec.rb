@@ -57,15 +57,24 @@ RSpec.describe UploadsController, :type => :controller do
   		xhr :get, :new
 			expect(response.status).to eq(200)
   	end
+  end
+
+  describe "upload#create" do 
+		login_user 
   	it 'creates new upload with valid parameters' do
       expect {
         post :create, :upload => {name: "hi", text: "huo"}
       }.to change { Upload.count }.by(1)
     end
-  	# it "creates a new text upload with valid params" do 
-  	# 	get :new, {name: "test", text: "this is a test"}
-  	# 	expect(Upload.count).to change_by(1)
-  	# end
   end
+
+  # describe "upload#destroy" do
+		# login_user 
+  # 	it 'deletes uploads' do 
+  #   	@upload = Upload.create(name: "bleh", text: "bleeehh")
+  #   	delete :destroy, id: @upload.id 
+  #   	@upload.should eq(nil)
+  # 	end
+  # end
 
 end

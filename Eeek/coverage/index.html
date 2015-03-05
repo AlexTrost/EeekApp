@@ -14,27 +14,27 @@
       <img src="./assets/0.8.0/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2015-03-05T10:25:54-08:00">2015-03-05T10:25:54-08:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2015-03-05T10:36:45-08:00">2015-03-05T10:36:45-08:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="green">91.55%</span></span>
+    (<span class="covered_percent"><span class="green">94.04%</span></span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         2.05
+         2.01
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
     <b>21</b> files in total.
-    <b>142</b> relevant lines. 
-    <span class="green"><b>130</b> lines covered</span> and
-    <span class="red"><b>12</b> lines missed </span>
+    <b>151</b> relevant lines. 
+    <span class="green"><b>142</b> lines covered</span> and
+    <span class="red"><b>9</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -82,12 +82,12 @@
       
       <tr>
         <td class="strong"><a href="#c537278f11ed33d445320c9f182a5818dd039938" class="src_link" title="app/controllers/uploads_controller.rb">app/controllers/uploads_controller.rb</a></td>
-        <td class="yellow strong">83.33 %</td>
+        <td class="green strong">93.33 %</td>
         <td>66</td>
         <td>30</td>
-        <td>25</td>
-        <td>5</td>
-        <td>6.1</td>
+        <td>28</td>
+        <td>2</td>
+        <td>6.2</td>
       </tr>
       
       <tr>
@@ -143,9 +143,9 @@
       <tr>
         <td class="strong"><a href="#0df17afea8b62542334d8173b63f97beb81d8f67" class="src_link" title="spec/controllers/upload_controller_spec.rb">spec/controllers/upload_controller_spec.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>71</td>
-        <td>42</td>
-        <td>42</td>
+        <td>81</td>
+        <td>51</td>
+        <td>51</td>
         <td>0</td>
         <td>1.0</td>
       </tr>
@@ -465,11 +465,11 @@
         <div class="source_table" id="c537278f11ed33d445320c9f182a5818dd039938">
   <div class="header">
     <h3>app/controllers/uploads_controller.rb</h3>
-    <h4><span class="yellow">83.33 %</span> covered</h4>
+    <h4><span class="green">93.33 %</span> covered</h4>
     <div>
       <b>30</b> relevant lines. 
-      <span class="green"><b>25</b> lines covered</span> and
-      <span class="red"><b>5</b> lines missed.</span>
+      <span class="green"><b>28</b> lines covered</span> and
+      <span class="red"><b>2</b> lines missed.</span>
     </div>
   </div>
   
@@ -812,20 +812,20 @@
           <code class="ruby">  def destroy</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="57">
-          
+        <li class="covered" data-hits="1" data-linenumber="57">
+          <span class="hits">1</span>
           
           <code class="ruby">    @upload = Upload.find(params[:id])</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="58">
-          
+        <li class="covered" data-hits="1" data-linenumber="58">
+          <span class="hits">1</span>
           
           <code class="ruby">    @upload.destroy</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="59">
-          
+        <li class="covered" data-hits="1" data-linenumber="59">
+          <span class="hits">1</span>
           
           <code class="ruby">    redirect_to uploads_path, notice:  &quot;The upload #{@upload.name} has been deleted.&quot;</code>
         </li>
@@ -1799,8 +1799,8 @@
     <h3>spec/controllers/upload_controller_spec.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>42</b> relevant lines. 
-      <span class="green"><b>42</b> lines covered</span> and
+      <b>51</b> relevant lines. 
+      <span class="green"><b>51</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -2162,58 +2162,58 @@
           <code class="ruby">  	end</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="60">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="60">
           
-          <code class="ruby">  	it &#39;creates new upload with valid parameters&#39; do</code>
+          
+          <code class="ruby">  end</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="61">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="61">
           
-          <code class="ruby">      expect {</code>
+          
+          <code class="ruby"></code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="62">
           <span class="hits">1</span>
           
+          <code class="ruby">  describe &quot;upload#create&quot; do </code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="63">
+          <span class="hits">1</span>
+          
+          <code class="ruby">		login_user </code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="64">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  	it &#39;creates new upload with valid parameters&#39; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="65">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      expect {</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="66">
+          <span class="hits">1</span>
+          
           <code class="ruby">        post :create, :upload =&gt; {name: &quot;hi&quot;, text: &quot;huo&quot;}</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="63">
+        <li class="covered" data-hits="2" data-linenumber="67">
           <span class="hits">2</span>
           
           <code class="ruby">      }.to change { Upload.count }.by(1)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="64">
-          
-          
-          <code class="ruby">    end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="65">
-          
-          
-          <code class="ruby">  	# it &quot;creates a new text upload with valid params&quot; do </code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="66">
-          
-          
-          <code class="ruby">  	# 	get :new, {name: &quot;test&quot;, text: &quot;this is a test&quot;}</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="67">
-          
-          
-          <code class="ruby">  	# 	expect(Upload.count).to change_by(1)</code>
-        </li>
-      
         <li class="never" data-hits="" data-linenumber="68">
           
           
-          <code class="ruby">  	# end</code>
+          <code class="ruby">    end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="69">
@@ -2228,7 +2228,67 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="71">
+        <li class="covered" data-hits="1" data-linenumber="71">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  describe &quot;upload#destroy&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="72">
+          <span class="hits">1</span>
+          
+          <code class="ruby">		login_user </code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="73">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  	it &#39;deletes uploads&#39; do </code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="74">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    	@upload = Upload.create(name: &quot;bleh&quot;, text: &quot;bleeehh&quot;)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="75">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    	delete :destroy, id: @upload.id </code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="76">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    	&quot;5&quot; * 40</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="77">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    	@upload.should eq(nil)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="78">
+          
+          
+          <code class="ruby">  	end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="79">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="80">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="81">
           
           
           <code class="ruby">end</code>
