@@ -1,14 +1,17 @@
-.home_container .welcome_circle {
+/*.home_container .welcome_circle {
 	height: 20em;
 	width: 20em;
 	text-align: center;
 	background-color: gray;
 	border-radius: 300em;
-	display: table-cell;
-	vertical-align: middle;
-}
+}*/
 
 .home_container {
-	display: table;
-	background-image: 
+	background-image: url(/assets/eeek_backgrounds/5.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%;gi
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	border: 2px orange solid;
 }
