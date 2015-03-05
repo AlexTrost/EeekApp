@@ -1,12 +1,14 @@
 .home_container .welcome_circle {
-	
 	height: 20em;
 	width: 20em;
 	text-align: center;
 	background-color: gray;
 	border-radius: 300em;
+	display: table-cell;
+	vertical-align: middle;
 }
 
 .home_container {
 	display: table;
+	background-image: 
 }
