@@ -16,7 +16,7 @@ class UsersController < ApplicationController
 	end
 
 	def destory
-		
+		# this needs to be a thing...
 	end
 
 	private

@@ -2,17 +2,6 @@ require 'rails_helper'
 
 RSpec.describe UsersController, :type => :controller do
 
-	describe 'user#index' do
-    it 'returns a succesful status' do 
-      get :index
-      expect(response.status).to eq(200)
-    end
-    # it 'renders the correct html page' do
-    #   get :index
-    #   expect(response).to render_template("index")
-    # end
-  end
-
   # describe 'user#login' do 
   #   it 'redirects upon successful login' do 
   #   User.create(name: "Alex", email: "Alex@alex.alex", password: "Alexissocool")
