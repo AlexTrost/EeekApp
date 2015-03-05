@@ -8,6 +8,10 @@ RSpec.describe HomeController, :type => :controller do
 			get :index
 			expect(response.status).to eq(200)
 		end
+		it "renders correct html page" do 
+			get :index
+			expect(response).to render_template("index")
+		end
 	end
 
 	describe 'home#index (not logged in)' do 

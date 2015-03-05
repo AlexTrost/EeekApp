@@ -9,6 +9,10 @@ RSpec.describe DashboardController, :type => :controller do
 			get :index
 			expect(response.status).to eq(200)
 		end
+		it 'renders the correct html page' do 
+			get :index
+			expect(response).to render_template("index")
+		end
 	end
 
 	describe 'dashboard#index (no sign in)' do
