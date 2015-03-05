@@ -1,5 +1,5 @@
 require 'rails_helper'
 
-RSpec.describe UploadController, :type => :controller do
+RSpec.describe UploadsController, :type => :controller do
 
 end
