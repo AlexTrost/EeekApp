@@ -7,10 +7,10 @@ RSpec.describe UsersController, :type => :controller do
       get :index
       expect(response.status).to eq(200)
     end
-    it 'renders the correct html page' do
-      get :index
-      expect(response).to render_template("index")
-    end
+    # it 'renders the correct html page' do
+    #   get :index
+    #   expect(response).to render_template("index")
+    # end
   end
 
   # describe 'user#login' do 
@@ -21,41 +21,41 @@ RSpec.describe UsersController, :type => :controller do
   #   end
   # end
 
-  describe 'user#create' do
-    it 'redirects upon successful new user creation' do 
-      post :create, :user => attributes_for(:user)
-        expect(response.status).to eq(302)
-    end
-    it 'creates new user with valid parameters' do
-      expect {
-        post :create, :user => attributes_for(:user)
-        expect(response)
-      }.to change { User.count }.by(1)
-    end
-    it "does not create with missing name field" do
-      expect {
-        post :create, :user => { :email => "sup@sup.sup", :password => "h1h1h1h1"}
-        expect(response)
-      }.to_not change { User.count }
-    end
-    it "does not create with missing email field" do
-      expect {
-        post :create, :user => { :name => "hohoho", :password => "h1h1h1h1"}
-        expect(response)
-      }.to_not change { User.count }
-    end
-    it "does not create with invalid email field" do
-      expect {
-        post :create, :user => { :name => "hohoho", :email => "invalid", :password => "h1h1h1h1"}
-        expect(response)
-      }.to_not change { User.count }
-    end
-    it "does not create with missing password field" do
-      expect {
-        post :create, :user => { :name => "Hi", :email => "h1h1h1h1@email.com"}
-        expect(response)
-      }.to_not change { User.count }
-    end
-  end
+  # describe 'user#create' do
+  #   it 'redirects upon successful new user creation' do 
+  #     post :create, :user => attributes_for(:user)
+  #       expect(response.status).to eq(302)
+  #   end
+  #   it 'creates new user with valid parameters' do
+  #     expect {
+  #       post :create, :user => attributes_for(:user)
+  #       expect(response)
+  #     }.to change { User.count }.by(1)
+  #   end
+  #   it "does not create with missing name field" do
+  #     expect {
+  #       post :create, :user => { :email => "sup@sup.sup", :password => "h1h1h1h1"}
+  #       expect(response)
+  #     }.to_not change { User.count }
+  #   end
+  #   it "does not create with missing email field" do
+  #     expect {
+  #       post :create, :user => { :name => "hohoho", :password => "h1h1h1h1"}
+  #       expect(response)
+  #     }.to_not change { User.count }
+  #   end
+  #   it "does not create with invalid email field" do
+  #     expect {
+  #       post :create, :user => { :name => "hohoho", :email => "invalid", :password => "h1h1h1h1"}
+  #       expect(response)
+  #     }.to_not change { User.count }
+  #   end
+  #   it "does not create with missing password field" do
+  #     expect {
+  #       post :create, :user => { :name => "Hi", :email => "h1h1h1h1@email.com"}
+  #       expect(response)
+  #     }.to_not change { User.count }
+  #   end
+  # end
 
 end
