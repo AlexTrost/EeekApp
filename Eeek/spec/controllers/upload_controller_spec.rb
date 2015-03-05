@@ -14,10 +14,30 @@ RSpec.describe UploadsController, :type => :controller do
     end
   end
 
-  describe "upload#index (not logged in)" do 
+  describe "when not logged in" do 
   	it "returns a redirect status" do 
   		get :index
   		expect(response.status).to eq(302)
+  	end
+  	it "returns a redirect status" do 
+  		get :new
+  		expect(response.status).to eq(302)
+  	end
+  	it "returns a redirect status" do 
+  		get :create
+  		expect(response.status).to eq(302)
+  	end
+  	it "returns a redirect status" do 
+  		get :destroy
+  		expect(response.status).to eq(302)
+  	end
+  end
+
+  describe "upload#new" do
+		login_user 
+  	it "returns a successful status" do 
+  		xhr :get, :new
+			expect(response.status).to eq(200)
   	end
   end
 
