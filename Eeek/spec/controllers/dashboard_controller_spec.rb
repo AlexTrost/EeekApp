@@ -11,7 +11,7 @@ RSpec.describe DashboardController, :type => :controller do
 		end
 	end
 
-	describe 'dashboard#index' do
+	describe 'dashboard#index (no sign in)' do
 		it 'returns a redirect status when user is not logged in' do
 			get :index
 			expect(response.status).to eq(302)
