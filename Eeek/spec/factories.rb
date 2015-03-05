@@ -4,4 +4,10 @@ FactoryGirl.define do
     email { "Alex@alex.alex" }
     password { "Alexissocool" }
   end
+
+  factory :text_upload do 
+  	name { "Text" }
+  	text { "Text upload" }
+  end
+  
 end

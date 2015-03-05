@@ -48,8 +48,6 @@ RSpec.describe UploadsController, :type => :controller do
       get :index
       response.body { should have_selector('p', text: @upload.text) }
     end
-    it 'displays the image uploads' do 
-    	@upload = Upload.create(name:"image", attatchment: )
   end
 
 
@@ -59,6 +57,11 @@ RSpec.describe UploadsController, :type => :controller do
   		xhr :get, :new
 			expect(response.status).to eq(200)
   	end
+  	it 'creates new upload with valid parameters' do
+      expect {
+        post :create, :upload => {name: "hi", text: "huo"}
+      }.to change { Upload.count }.by(1)
+    end
   	# it "creates a new text upload with valid params" do 
   	# 	get :new, {name: "test", text: "this is a test"}
   	# 	expect(Upload.count).to change_by(1)
