@@ -3,10 +3,15 @@ require 'rails_helper'
 RSpec.describe DashboardController, :type => :controller do
 
 	describe 'dashboard#index' do 
-		it 'returns a succesful status' do
+		current_user = User.first
+		it 'returns a succesful status when user is logged in' do
 			get :index
 			expect(response.status).to eq(200)
 		end
+		# it 'returns a redirect status when user is not logged in' do
+		# 	get :index
+		# 	expect(response.status).to eq(302)
+		# end
 
 	end
 
