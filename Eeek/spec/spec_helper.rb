@@ -4,10 +4,15 @@ require 'rspec/rails'
 # require 'rspec/autorun'
 # Capybara.javascript_driver = :webkit
 
+require 'devise'
+
 Dir[Rails.root.join("spec/support/**/*.rb")].each { |f| require f }
 
 RSpec.configure do |config|
   config.include FactoryGirl::Syntax::Methods
+  
+  config.include Devise::TestHelpers, :type => :controller
+  config.extend ControllerMacros, :type => :controller
 
   config.use_transactional_fixtures = false
   config.before(:suite) do
@@ -47,4 +52,6 @@ RSpec.configure do |config|
     mocks.verify_partial_doubles = true
   end
 end
+
+
 

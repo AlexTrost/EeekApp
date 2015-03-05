@@ -2,8 +2,9 @@ require 'rails_helper'
 
 RSpec.describe DashboardController, :type => :controller do
 
+
 	describe 'dashboard#index' do 
-		current_user = User.first
+		login_user
 		it 'returns a succesful status when user is logged in' do
 			get :index
 			expect(response.status).to eq(200)
