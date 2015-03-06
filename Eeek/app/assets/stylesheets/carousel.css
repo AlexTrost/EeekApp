@@ -45,8 +45,8 @@
   background-image: url(/assets/cloud_icon.png);
   background-repeat: no-repeat;
   background-size: 100%;
-  height: 15em;
-  width: 15em;
+  height: 17em;
+  width: 17em;
 }
 
 .carousel_div .cloud1 {
@@ -55,7 +55,8 @@
 }
 
 .carousel_div .cloud2 {
-  left: 90em;
+  top: 8em;
+  left: 94em;
 }
 
 .carousel_div .cloud3 {
