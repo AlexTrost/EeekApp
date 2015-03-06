@@ -1,13 +1,24 @@
 .home_container .welcome_circle {
-	width:500px;
-	height:500px;
+	height: 350px;
+	width: 350px;
+	/*text-align: center;*/
+	/*background-color: #0066CC;*/
+	/*opacity: .7;*/
+	/*border-radius: 50%;*/
+	/*margin: 10% auto;*/
+	/*line-height: 2em;*/
+	/*font-size: 20px;*/
+	/*width:500px;*/
+	/*height:500px;*/
 	border-radius:50%;
-	font-size:50px;
+	font-size:20px;
 	color:#fff;
-	line-height:500px;
+	line-height:340px;
 	text-align:center;
 	background:#000
 }
+
+
 
 .home_container {
 	background-image: url(/assets/eeek_backgrounds/2.jpg);
@@ -23,3 +34,4 @@
 	position: block;
 	margin-top: 30px;
 }*/
+
