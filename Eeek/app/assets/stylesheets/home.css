@@ -3,9 +3,9 @@
 	width: 350px;
 	/*text-align: center;*/
 	/*background-color: #0066CC;*/
-	/*opacity: .7;*/
+	opacity: .8;
 	/*border-radius: 50%;*/
-	/*margin: 10% auto;*/
+	margin: 12% auto;
 	/*line-height: 2em;*/
 	/*font-size: 20px;*/
 	/*width:500px;*/
@@ -21,7 +21,7 @@
 
 
 .home_container {
-	background-image: url(/assets/eeek_backgrounds/2.jpg);
+	background-image: url(/assets/eeek_backgrounds/12.jpg);
 	background-repeat: no-repeat;
 	background-size: 100%;
 	height: 100%;
@@ -29,9 +29,4 @@
 	position: absolute;
 	border: 2px orange solid;
 }
-
-/*.wordy  {
-	position: block;
-	margin-top: 30px;
-}*/
 
