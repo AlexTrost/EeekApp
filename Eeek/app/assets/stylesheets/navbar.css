@@ -1,5 +1,7 @@
 nav {
-  background-color: #323949;
+  /*background-color: #323949;*/
+  background-color: #000;
+  opacity: .9;
   color: #fff;
   padding-bottom: 1px;
 }
