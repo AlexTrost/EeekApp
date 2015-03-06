@@ -73,10 +73,7 @@ $(document).ready(function() {
 	cloud5()	
 
 })
-
-
-
-
+// ------------------------------------------------------------------------
 // $(document).ready(function() {
 
 // 	var all_clouds = $(".cloud")
@@ -102,3 +99,40 @@ $(document).ready(function() {
 
 // 	}
 // })
+
+
+// $(document).ready(function() {
+// 	var div_width = "17em";
+// 	// var div_count = 15;
+// 	var reset_offset = $('body').css("width");
+
+// 	function init() {
+
+// 	    // Set initial position - note that the first div will
+// 	    // be off the lefthand side
+
+// 	    for(i=0;i<6;i++) {
+// 	        var foo = $('.cloud' + i);
+// 	        var left = ''+((i-1)*div_width)+'em';
+// 	        foo.css("left", left);
+// 	     }
+
+// 	     doMove();
+// 	}
+
+// 	function doMove() {
+// 	    for(i=0;i<6;i++) {
+// 	        var foo = $('.cloud' + i);
+// 	        var left = $(foo).css("left");
+// 	        var hi = (left + 1) + "em"
+// 	        foo.css("left", hi)
+// 	        if (left >= reset_offset) {
+// 	            foo.css("left", 0);
+// 	        }
+// 	    }
+// 	    setTimeout(doMove, 20);
+// 	}
+
+// init();
+
+// })	
