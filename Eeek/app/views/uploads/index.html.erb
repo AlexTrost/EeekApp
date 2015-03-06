@@ -1,10 +1,34 @@
 <%= render partial: "dashboard/top_bar" %>
 
-<h1> All of your things here </h1>
+<div class="upload_index_wrapper">
 
-	<ul class="thumbnail_ul">
-		<% if @user_uploads && @user_uploads.length > 0 %>
-			<% @user_uploads.each do |upload| %>
+	<h1> All of your things here </h1>
+
+		<ul class="thumbnail_ul">
+			<% if @user_uploads && @user_uploads.length > 0 %>
+				<% @user_uploads.each do |upload| %>
+					<li class="thumbnail_li">
+						<h3 class="hidden_thumbnail_message">Click to enlarge</h3>
+						<% if upload.text %>
+							<p class="thumbnail text_thumbnail"><%= upload.text %></p>
+							<%= link_to "Delete", upload_path(upload), method: :delete %>
+						<% else  %>
+							<img src=<%= upload.attachment %> class="thumbnail">
+							<%= link_to "Delete", upload_path(upload), method: :delete %>
+						<% end %>
+					</li>
+				<% end %>
+			<% else %>
+				<hr>
+				<p>You haven't uploaded anything yet! <br> Click the link in the top bar to get started.</p>
+			<% end %>
+		</ul>
+		<br>
+		<hr>
+		<br>
+	<h1> All of the things that came with your account here </h1>
+		<ul class="thumbnail_ul">
+			<% @complimentary_uploads.each do |upload| %>
 				<li class="thumbnail_li">
 					<h3 class="hidden_thumbnail_message">Click to enlarge</h3>
 					<% if upload.text %>
@@ -16,26 +40,6 @@
 					<% end %>
 				</li>
 			<% end %>
-		<% else %>
-			<hr>
-			<p>You haven't uploaded anything yet! <br> Click the link in the top bar to get started.</p>
-		<% end %>
-	</ul>
+		</ul>
 
-	<hr>
-<h1> All of the things that came with your account here </h1>
-	<ul class="thumbnail_ul">
-		<% @complimentary_uploads.each do |upload| %>
-			<li class="thumbnail_li">
-				<h3 class="hidden_thumbnail_message">Click to enlarge</h3>
-				<% if upload.text %>
-					<p class="thumbnail text_thumbnail"><%= upload.text %></p>
-					<%= link_to "Delete", upload_path(upload), method: :delete %>
-				<% else  %>
-					<img src=<%= upload.attachment %> class="thumbnail">
-					<%= link_to "Delete", upload_path(upload), method: :delete %>
-				<% end %>
-			</li>
-		<% end %>
-	</ul>
-				
+</div>
