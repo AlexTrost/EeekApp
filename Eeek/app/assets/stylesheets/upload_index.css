@@ -17,11 +17,6 @@
 	vertical-align: middle;
 }
 
-.thumbnail:hover { 
-  opacity: .4; 
-  /*border: 4px black solid;*/
-}
-
 .text_thumbnail {
 	width: 30em;
 }
@@ -32,10 +27,6 @@
 	color: red;
 	font-size: 40px;
 	display: none;
- }
-
- .hidden_thumbnail_message:hover {
- 	display: inline;
  }
 
  .upload_index_wrapper {
