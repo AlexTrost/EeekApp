@@ -59,6 +59,11 @@ $(document).ready(function() {
     }
   }
 
+  function getRidOfDots() {
+    $(".owl-page").css("display", "none")
+  }
+
 fontSize()
 carouselMagic("#upload_carousel", 1)
+getRidOfDots()
 });

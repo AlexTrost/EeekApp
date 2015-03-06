@@ -45,7 +45,6 @@
   background-image: url(/assets/cloud_icon.png);
   background-repeat: no-repeat;
   background-size: 100%;
-  border: 1px blue solid;
   height: 15em;
   width: 15em;
 }
@@ -68,4 +67,5 @@
   left: 73em;
   top: 29em;
 }
+
 
