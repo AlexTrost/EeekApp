@@ -59,7 +59,7 @@ $(document).ready(function() {
 		var $page_width = $("body").width()
 		cloudAnimation()
 		function cloudAnimation() {
-			$cloud.animate({"left": $page_width}, 900g00, "linear");
+			$cloud.animate({"left": $page_width}, 90000, "linear");
 			$cloud.animate({"opacity": 0}, 10)
 			$cloud.animate({"left": -200}, 100)
 			$cloud.animate({"opacity": 1}, 10, cloudAnimation)
@@ -71,6 +71,16 @@ $(document).ready(function() {
 	cloud3()	
 	cloud4()	
 	cloud5()	
+
+
+// 	$('.stop').on(click, function() {
+// 		alert("hohoh")
+//     break cloud1;
+//     break cloud2;
+//     break cloud3; this doesn't work yet.
+//     break cloud4;
+//     break cloud5;
+// });
 
 })
 // ------------------------------------------------------------------------

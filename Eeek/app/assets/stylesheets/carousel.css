@@ -69,4 +69,9 @@
   top: 29em;
 }
 
-
+.stop {
+  width: 6em;
+  text-align: center;
+  border: 1px black solid;
+  border-radius: 10%;
+}
