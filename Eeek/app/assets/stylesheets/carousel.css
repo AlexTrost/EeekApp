@@ -3,16 +3,6 @@
   height: 50%;
 }
 
-.carousel_div .cloud {
-  position: absolute;
-  background-image: url(/assets/cloud_icon.png);
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: bottom;
-  border: 1px blue solid;
-  height: 12em;
-  width: 12em;
-}
 
 .carousel_div #upload_carousel {
   height: 10%;
@@ -20,6 +10,7 @@
 
 .carousel_div #upload_carousel .upload_div {
   border: 6px black solid;
+  background-color: white;
   width: 80em;
   height: 40em;
   margin: 5em auto;
@@ -49,5 +40,32 @@
   padding: 3%;
 }
 
+.carousel_div .cloud {
+  position: absolute;
+  background-image: url(/assets/cloud_icon.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  border: 1px blue solid;
+  height: 15em;
+  width: 15em;
+}
 
+.carousel_div .cloud1 {
+  left: 50em;
+  top: 3em;
+}
+
+.carousel_div .cloud2 {
+  left: 90em;
+}
+
+.carousel_div .cloud3 {
+  left: 3em;
+  top: 44em;
+}
+
+.carousel_div .cloud5 {
+  left: 73em;
+  top: 29em;
+}
 
