@@ -112,6 +112,7 @@ body {
 
 .outermost .cloud {
   position: absolute;
+  
   background-image: url(/assets/cloud_icon.png);
   background-repeat: no-repeat;
   background-size: 100%;

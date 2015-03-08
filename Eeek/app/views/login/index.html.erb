@@ -1,16 +1,16 @@
  <div class="outermost">
-  <div class="wide">
+  <!-- <div class="wide"> -->
     <div class="login_page">
       <h1 class="eeek_title">Eeek.</h1>
-      <div class="black_arrow"> </div>
-      <div class="black_arrow2"> </div>
+      <!-- <div class="black_arrow"> </div> -->
+      <!-- <div class="black_arrow2"> </div> -->
       <% if @errors %>
         <% @errors.each do |attribute, error| %>
           <p>Oh No! <%="#{attribute.capitalize}  #{error}" %></p>
         <% end %>
       <% end %>
-    <%= render 'login_form' %>
-    <%= render 'sign_up_form' %>
+      <%= render 'login_form' %>
+      <%= render 'sign_up_form' %>
     </div>
     <!-- <div class="about">
       <h1> About Eeek</h1>
