@@ -110,7 +110,7 @@ body {
 	margin: 10% 0 auto;
 }
 
-.login_cloud .cloud {
+.outermost .cloud {
   position: absolute;
   background-image: url(/assets/cloud_icon.png);
   background-repeat: no-repeat;
@@ -119,22 +119,22 @@ body {
   width: 17em;
 }
 
-.login_cloud .cloud1 {
+.outermost .cloud1 {
   left: 50em;
   top: 3em;
 }
 
-.login_cloud .cloud2 {
+.outermost .cloud2 {
   top: 8em;
   left: 94em;
 }
 
-.login_cloud .cloud3 {
+.outermost .cloud3 {
   left: 3em;
   top: 44em;
 }
 
-.login_cloud .cloud5 {
+.outermost .cloud5 {
   left: 73em;
   top: 29em;
 }
