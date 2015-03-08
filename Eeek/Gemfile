@@ -21,6 +21,7 @@ gem 'devise'
 gem 'carrierwave'
 
 gem 'sidekiq'
+
 gem 'clockwork'
 
 gem 'owlcarousel-rails'

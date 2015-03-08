@@ -4,6 +4,7 @@ nav {
   opacity: .9;
   color: #fff;
   padding-bottom: 1px;
+  
 }
 
 nav ul {
@@ -19,7 +20,8 @@ nav ul li {
 nav a {
   text-decoration: none;
   color: #fff;
-  font-family: Arial;
+  font-size: 22px;
+  font-family: 'Bree Serif';
 }
 
 nav a:hover {
