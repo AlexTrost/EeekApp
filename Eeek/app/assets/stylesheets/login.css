@@ -30,7 +30,6 @@ body {
 	margin: 1% 15% 0 15%;
 	width: auto;
 	text-align: center;
-	border: 2px green solid;
 
 }
 
@@ -84,14 +83,12 @@ body {
 .login_div {
 	margin: 8% auto;
 	width: 31em;
-	border: 2px blue solid;
 	text-align: center;
 }
 
 .signup_div {
 	margin: 6% auto;
 	width: 31em;
-	border: 2px blue solid;
 	text-align: center;
 }
 
@@ -119,27 +116,26 @@ body {
   background-image: url(/assets/cloud_icon.png);
   background-repeat: no-repeat;
   background-size: 100%;
-  height: 17em;
-  width: 17em;
+  height: 20em;
+  width: 20em;
 }
 
 .outermost .cloud_1 {
-  border: 2px green solid;
   left: 75em;
   top: 3em;
 }
 
-/*.outermost .cloud2 {
-  top: 8em;
-  left: 94em;
+.outermost .cloud_2 {
+  top: 28em;
+  left: 84em;
 }
 
-.outermost .cloud3 {
+.outermost .cloud_3 {
+  left: 13em;
+  top: 20em;
+}
+
+.outermost .cloud_4 {
   left: 3em;
-  top: 44em;
+  top: 2em;
 }
-
-.outermost .cloud5 {
-  left: 73em;
-  top: 29em;
-}*/
