@@ -2,11 +2,12 @@
 		top:5%;
     /*left:100%;*/
     right:0;
+    width: 20%;
     height: 100%;
     position: fixed;
     border: 4px purple solid;
     background-color: white;
-    display: none;
+    /*display: none;*/
   }
 
   .form body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, 
@@ -15,20 +16,37 @@ pre, form, fieldset, input, textarea, p, blockquote, th, td {
   margin:0;}
 
 
+.form h1 {
+	margin: 30% 1.5% 0 1.5%;
+	/*width: 98%;*/
+	text-align: center;
+	font-family: 'Bree Serif'
+}
+
 
 #new_upload_form {
   display: none;
+  width: auto;
+    border: 4px blue solid;
+
 }
 
 #new_text_form {
   display: none;
+    border: 4px green solid;
+
 }
 
 #checkbox_list {
   list-style-type: none;
+  border: 4px yellow solid;
+  width: 60%;
+
 }
 
 #checkbox_list .checkbox{
   display: inline;
   border: 2px blue solid;
+    border: 4px red solid;
+
 }
