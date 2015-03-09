@@ -2,6 +2,12 @@
 @import url(http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
 
 
+@media (min-width: 500px) and (max-width: 600px) {
+        body {
+          border: 10px green solid;
+        }
+}
+
 body {
 	margin: 0;
 	padding: 0;
