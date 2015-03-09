@@ -82,14 +82,14 @@ body {
 }*/
 
 .login_div {
-	/*margin: 15% 0 10% 13%;*/
+	margin: 15% auto;
 	width: 31em;
 	border: 2px blue solid;
 	text-align: center;
 }
 
 .signup_div {
-	/*margin: 10% 0 10% 13%;*/
+	margin: 10% auto;
 	width: 31em;
 	border: 2px blue solid;
 	text-align: center;
