@@ -40,13 +40,21 @@ pre, form, fieldset, input, textarea, p, blockquote, th, td {
 #checkbox_list {
   list-style-type: none;
   border: 4px yellow solid;
-  width: 60%;
+  height: 7em;
+	margin: 0% 1.5% 0 1.5%;
+	text-align: center;
+  
 
 }
 
 #checkbox_list .checkbox{
-  display: inline;
-  border: 2px blue solid;
-    border: 4px red solid;
+  display: inline-block;
+  /*border: 2px black solid;*/
+  /*border-radius: 15%;*/
+	height: 100%;
+	width: 40%;
+}
 
+#checkbox_list #text_checkbox {
+	border: 2px red solid;
 }
