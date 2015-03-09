@@ -12,10 +12,6 @@ body {
 
 @media (min-width: 320px) and (max-width: 720px) {
   
-  body {
-   	border: 10px green solid;
-  }
-
   .outermost {
 		margin: 0;
 		padding: 0;
@@ -134,10 +130,6 @@ body {
 
 @media (min-width: 720px) and (max-width: 1020px) {
    
-   body {
-    border: 10px red solid;
-    }
-
     .outermost {
 		margin: 0;
 		padding: 0;
@@ -257,10 +249,6 @@ body {
 /*------------------------------large---------------------------------*/
 
 @media (min-width: 1020px) {
-   
-   body {
-    border: 10px blue solid;
-    }
 
 	.outermost {
 		margin: 0;
