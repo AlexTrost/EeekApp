@@ -20,36 +20,38 @@ body {
 	border: 2px black solid;
 }
 
-.wide {
+/*.wide {
 	width: 200%;
 	height: 100%;
-}
+}*/
 
 
 .login_page {
-	margin: 1% 0 0 15%;
-	width: 20%;
+	margin: 1% 15% 0 15%;
+	width: auto;
+	text-align: center;
+	border: 2px green solid;
 
 }
 
 .login_page .eeek_title {
 	font-size: 80px;
-	margin-left: 37%;
+	/*margin-left: 37%;*/
 	font-family: 'Bree Serif';
 	margin-top: -1px;
 }
 
 
-.about {
+/*.about {
 	width: 30%;
 	margin: -17% 0 0 62%;
 	font-family: "Bree Serif";
 	font-size: 30px;
 	text-align: center;
 	position: relative;
-}
+}*/
 
-.black_arrow {
+/*.black_arrow {
 	background-image: url("black_arrow.jpeg");
 	background-size: 100%;
 	height: 4em;
@@ -57,9 +59,9 @@ body {
 	position: absolute;
 	margin-left: 64%;
 	margin-top: 13em;
-}
+}*/
 
-.black_arrow:hover {
+/*.black_arrow:hover {
 	height: 4.25em;
 	width: 4.25em;
 }
@@ -77,17 +79,19 @@ body {
 .black_arrow2:hover {
 	height: 4.25em;
 	width: 4.25em;
-}
+}*/
 
 .login_div {
-	margin: 15% 0 10% 13%;
+	/*margin: 15% 0 10% 13%;*/
 	width: 31em;
+	border: 2px blue solid;
 	text-align: center;
 }
 
 .signup_div {
-	margin: 10% 0 10% 13%;
+	/*margin: 10% 0 10% 13%;*/
 	width: 31em;
+	border: 2px blue solid;
 	text-align: center;
 }
 
@@ -112,7 +116,7 @@ body {
 
 .outermost .cloud {
   position: absolute;
-  
+
   background-image: url(/assets/cloud_icon.png);
   background-repeat: no-repeat;
   background-size: 100%;
