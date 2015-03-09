@@ -131,7 +131,7 @@ body {
 	margin: 10% 0 auto;
 }
 
-.outermost .cloud {
+.outermost .clouds {
   position: absolute;
   background-image: url(/assets/cloud_icon.png);
   background-repeat: no-repeat;
