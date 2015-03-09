@@ -126,6 +126,10 @@ body {
 	font-family: bold;
 }
 
+input:hover {
+	border: 4px #336699 solid;
+}
+
 .coming_soon_div {
 	text-align: center;
 	margin: 10% 0 auto;

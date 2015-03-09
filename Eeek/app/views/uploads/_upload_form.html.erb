@@ -17,10 +17,9 @@
     <% end %>
 
     <%= form_for :upload, :url => uploads_path, :method => :post, html: { multipart: true, id: "new_upload_form" }, remote: true do |f| %>
-      <%= f.label :attachment %>
-      <%= f.file_field :attachment %>
+      <%= f.file_field :attachment, class: "uploader" %>
       <hr>
-      <%= f.submit "Save", class: "btn btn-primary button" %>
+      <%= f.submit "Save", class: "upload_submit" %>
     <% end %> 
   </div>
 </div>
