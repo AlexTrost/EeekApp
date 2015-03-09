@@ -229,37 +229,37 @@ body {
 	  background-repeat: no-repeat;
 	  background-size: 100%;
 	  height: 20em;
-	  width: 20em;
+	  width: 20%;
 	}
 
 	.outermost .cloud_1 {
-	  left: 75em;
-	  top: 3em;
+	  left: 75%;
+	  top: 3%;
 	}
 
 	.outermost .cloud_2 {
-	  top: 28em;
-	  left: 84em;
+	  top: 38%;
+	  left: 80%;
 	}
 
 	.outermost .cloud_3 {
-	  left: 13em;
-	  top: 20em;
+	  left: 13%;
+	  top: 28%;
 	}
 
 	.outermost .cloud_4 {
-	  left: 3em;
-	  top: 2em;
+	  left: 3%;
+	  top: 2%;
 	}
 
 	.outermost .cloud_5 {
-	  left: 3em;
-	  top: 33em;
+	  left: 3%;
+	  top: 66%;
 	}
 
 	.outermost .cloud_6 {
-	  left: 40em;
-	  top: 36em;
+	  left: 40%;
+	  top: 63%;
 	}
 
 }
