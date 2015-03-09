@@ -27,14 +27,40 @@ pre, form, fieldset, input, textarea, p, blockquote, th, td {
 #new_upload_form {
   display: none;
   width: auto;
-    border: 4px blue solid;
+  border: 4px blue solid;
 
 }
 
 #new_text_form {
   /*display: none;*/
   border: 4px green solid;
+}
 
+#new_text_form input {
+	width: 50%;
+	height: 2em;
+	vertical-align: center;
+	margin: .4em 0 0 25%;
+	border-radius: 4px;
+	border: 3px black ridge;
+	text-align: center;
+	font-size: 20px;
+	padding: none;
+	font-family: bold;
+}
+
+textarea {
+  /*display: none;*/
+  width: 95%;
+	height: 20em;
+	vertical-align: center;
+	margin: .4em 0 0 2%;
+	border-radius: 4px;
+	border: 3px black ridge;
+	font-size: 20px;
+	padding: none;
+	font-family: bold;
+	padding: 2%;
 }
 
 #checkbox_list {

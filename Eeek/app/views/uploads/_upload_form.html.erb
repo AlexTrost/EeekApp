@@ -11,7 +11,7 @@
 
     <hr>
     <%= form_for :upload, :url => uploads_path, :method => :post, html: { multipart: true, id: "new_text_form" }, remote: true do |f| %>
-      <%= f.text_field :text %>
+      <%= f.text_area :text, :rows => "15"%>
       <hr>
       <%= f.submit "Save", class: "btn btn-primary button" %>
     <% end %>
