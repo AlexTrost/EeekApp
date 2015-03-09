@@ -116,7 +116,6 @@ body {
 
 .outermost .cloud {
   position: absolute;
-
   background-image: url(/assets/cloud_icon.png);
   background-repeat: no-repeat;
   background-size: 100%;
@@ -124,12 +123,13 @@ body {
   width: 17em;
 }
 
-.outermost .cloud1 {
-  left: 50em;
+.outermost .cloud_1 {
+  border: 2px green solid;
+  left: 75em;
   top: 3em;
 }
 
-.outermost .cloud2 {
+/*.outermost .cloud2 {
   top: 8em;
   left: 94em;
 }
@@ -142,4 +142,4 @@ body {
 .outermost .cloud5 {
   left: 73em;
   top: 29em;
-}
+}*/
