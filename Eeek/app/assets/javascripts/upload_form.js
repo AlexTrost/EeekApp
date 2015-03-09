@@ -25,7 +25,7 @@ $(document).on("ready page:load", function() {
 			e.preventDefault()
 			var $sidebar = $("#side_bar")
 			if ($sidebar.is(":visible")) {
-				$sidebar.hide("slide", { direction: "right" }, 2000);
+				$sidebar.hide("slide", { direction: "right" }, 1000);
 				$("#upload_button").html("New Upload")
 			} else {
 				$sidebar.show("slide", { direction: "right" }, 1000);
