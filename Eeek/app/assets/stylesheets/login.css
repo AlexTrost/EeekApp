@@ -90,6 +90,8 @@ body {
 	margin: 6% auto;
 	width: 31em;
 	text-align: center;
+	background-color: white;
+	position: relative;
 }
 
 .signup_form {
@@ -156,4 +158,14 @@ body {
 .outermost .cloud_4 {
   left: 3em;
   top: 2em;
+}
+
+.outermost .cloud_5 {
+  left: 3em;
+  top: 33em;
+}
+
+.outermost .cloud_6 {
+  left: 40em;
+  top: 36em;
 }
