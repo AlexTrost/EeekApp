@@ -106,7 +106,8 @@ body {
 }
 
 #signup_form_display_button:hover {
-	border: 3px green solid;
+	border: 4px #336699 solid;
+	/*background-color: white;*/
 }
 
 
