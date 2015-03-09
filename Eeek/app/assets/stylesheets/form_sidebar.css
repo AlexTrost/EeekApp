@@ -4,10 +4,10 @@
     right:0;
     width: 20%;
     height: 100%;
-    position: fixed;
-    border: 4px purple solid;
-    background-color: white;
-    /*display: none;*/
+    position: absolute;
+    border: 4px black solid;
+    background-color: #B4B4B4;
+    display: none;
   }
 
   .form body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, 
@@ -50,6 +50,10 @@ pre, form, fieldset, input, textarea, p, blockquote, th, td {
 	font-family: bold;
 }
 
+#new_upload_form .upload_submit:hover {
+	border: 4px #336699 solid;
+}
+
 #new_text_form {
   display: none;
 }
@@ -68,7 +72,7 @@ pre, form, fieldset, input, textarea, p, blockquote, th, td {
 }
 
 #new_text_form input:hover {
-	border: 4px #336699 solid;;
+	border: 4px #336699 solid;
 }
 
 textarea {
@@ -85,7 +89,6 @@ textarea {
 
 #checkbox_list {
   list-style-type: none;
-  border: 4px yellow solid;
   height: 3em;
 	margin: 0% ;
 	text-align: center;

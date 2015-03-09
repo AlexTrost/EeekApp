@@ -126,7 +126,7 @@ body {
 	font-family: bold;
 }
 
-input:hover {
+.login_page input:hover {
 	border: 4px #336699 solid;
 }
 

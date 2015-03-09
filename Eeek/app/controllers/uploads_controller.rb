@@ -34,7 +34,7 @@ class UploadsController < ApplicationController
       if @upload.save
         # format.js { render :'upload_confirm' }
         # format.html { render :'dashboard/index' }
-        format.html {redirect_to dashboard_index_path, notice: "The upload #{@upload.name} has been uploaded."}
+        format.html {redirect_to dashboard_index_path, notice: "The upload has been uploaded."}
       else
         format.js { render :upload_fail }
       end
@@ -56,7 +56,7 @@ class UploadsController < ApplicationController
   def destroy
     @upload = Upload.find(params[:id])
     @upload.destroy
-    redirect_to uploads_path, notice:  "The upload #{@upload.name} has been deleted."
+    redirect_to uploads_path, notice:  "The upload has been deleted."
   end
 
 private
