@@ -28,6 +28,13 @@
     padding: 4% 3% 4% 0;
     border-bottom: 1px gray solid;
   }
+
+  nav ul .menu_icon {
+    height: 300px;
+    width: 300px;
+    border: 2px blue solid;  
+  }
+  
   nav a {
     text-decoration: none;
     color: #fff;
@@ -93,6 +100,11 @@
     display: inline-block;
     margin: 0 4% 0 4%;
   }
+
+  nav ul .menu_icon {
+    display: none;
+  }
+
   nav a {
     text-decoration: none;
     color: #fff;
@@ -159,6 +171,11 @@
     display: inline-block;
     margin: 0 6% 0 6%;
   }
+
+   nav ul .menu_icon {
+    display: none;
+  }
+
   nav a {
     text-decoration: none;
     color: #fff;
