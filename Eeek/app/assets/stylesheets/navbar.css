@@ -17,13 +17,16 @@
 
   nav ul {
     list-style-type: none;
-    text-align: center;
+    /*text-align: center;*/
     padding: 10px;
     width: 100%;
   }
   nav ul li {
-    display: inline-block;
+    display: none;
+    /*display: inline-block;*/
     margin: 0 7% 0 7%;
+    padding: 4% 3% 4% 0;
+    border-bottom: 1px gray solid;
   }
   nav a {
     text-decoration: none;
@@ -34,6 +37,7 @@
 
   nav a:hover {
     text-decoration: underline;
+    background-color: gray;
   }
   .logo {
     height: 75px;
@@ -64,6 +68,7 @@
 /*------------------------------medium---------------------------------*/
 
 @media (min-width: 720px) and (max-width: 1020px) {
+
    
    body {
     border: 10px red solid;
@@ -86,12 +91,12 @@
   }
   nav ul li {
     display: inline-block;
-    margin: 0 7% 0 7%;
+    margin: 0 4% 0 4%;
   }
   nav a {
     text-decoration: none;
     color: #fff;
-    font-size: 22px;
+    font-size: 18px;
     font-family: 'Bree Serif';
   }
 
@@ -123,6 +128,10 @@
 }
 
 
+
+
+
+
 /*------------------------------large---------------------------------*/
 
 @media (min-width: 1020px) {
@@ -132,10 +141,7 @@
 
     }
 
-
-
   nav {
-    /*background-color: #323949;*/
     background-color: #000;
     opacity: .9;
     color: #fff;
@@ -151,7 +157,7 @@
   }
   nav ul li {
     display: inline-block;
-    margin: 0 7% 0 7%;
+    margin: 0 6% 0 6%;
   }
   nav a {
     text-decoration: none;
@@ -163,11 +169,11 @@
   nav a:hover {
     text-decoration: underline;
   }
-  .logo {
+
+ /* .logo {
     height: 75px;
     width: 75px;
-
-  }
+  }*/
 
 
   .container {
