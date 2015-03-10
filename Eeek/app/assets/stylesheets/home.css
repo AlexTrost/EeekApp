@@ -8,30 +8,28 @@
   }
 
   .home_container .welcome_circle {
-	height: 350px;
-	width: 350px;
-	opacity: .9;
-	margin: 12% auto;
-	border-radius:50%;
-	font-size:20px;
-	color:#fff;
-	line-height:340px;
-	text-align:center;
-	background:#000;
-	font-family: 'Bree Serif';
-}
+		height: 350px;
+		width: 350px;
+		opacity: .9;
+		margin: 12% auto;
+		border-radius:50%;
+		font-size:20px;
+		color:#fff;
+		line-height:340px;
+		text-align:center;
+		background:#000;
+		font-family: 'Bree Serif';
+	}
 
-
-
-.home_container {
-	background-image: url(/assets/eeek_backgrounds/2.jpg);
-	background-repeat: no-repeat;
-	background-size: 100%;
-	background-position: bottom;
-	height: 100%;
-	width: 100%;
-	position: absolute;
-}
+	.home_container {
+		background-image: url(/assets/eeek_backgrounds/2.jpg);
+		background-repeat: no-repeat;
+		background-size: 100%;
+		background-position: bottom;
+		height: 100%;
+		width: 100%;
+		position: absolute;
+	}
 
 }
 
@@ -44,31 +42,29 @@
     border: 10px red solid;
     }
 
-    .home_container .welcome_circle {
-	height: 350px;
-	width: 350px;
-	opacity: .9;
-	margin: 12% auto;
-	border-radius:50%;
-	font-size:20px;
-	color:#fff;
-	line-height:340px;
-	text-align:center;
-	background:#000;
-	font-family: 'Bree Serif';
-}
+  .home_container .welcome_circle {
+		height: 350px;
+		width: 350px;
+		opacity: .9;
+		margin: 12% auto;
+		border-radius:50%;
+		font-size:20px;
+		color:#fff;
+		line-height:340px;
+		text-align:center;
+		background:#000;
+		font-family: 'Bree Serif';
+	}
 
-
-
-.home_container {
-	background-image: url(/assets/eeek_backgrounds/2.jpg);
-	background-repeat: no-repeat;
-	background-size: 100%;
-	background-position: bottom;
-	height: 100%;
-	width: 100%;
-	position: absolute;
-}
+	.home_container {
+		background-image: url(/assets/eeek_backgrounds/2.jpg);
+		background-repeat: no-repeat;
+		background-size: 100%;
+		background-position: bottom;
+		height: 100%;
+		width: 100%;
+		position: absolute;
+	}
 }
 
 /*------------------------------large---------------------------------*/
@@ -76,62 +72,32 @@
 @media (min-width: 1020px) {
    
    body {
-    border: 10px blue solid;
     }
 
-    .home_container .welcome_circle {
-	height: 350px;
-	width: 350px;
-	opacity: .9;
-	margin: 12% auto;
-	border-radius:50%;
-	font-size:20px;
-	color:#fff;
-	line-height:340px;
-	text-align:center;
-	background:#000;
-	font-family: 'Bree Serif';
+  .home_container .welcome_circle {
+		height: 350px;
+		width: 350px;
+		opacity: .9;
+		margin: 12% auto;
+		border-radius:50%;
+		font-size:20px;
+		color:#fff;
+		line-height:340px;
+		text-align:center;
+		background:#000;
+		font-family: 'Bree Serif';
 }
 
-
-
-.home_container {
-	background-image: url(/assets/eeek_backgrounds/2.jpg);
-	background-repeat: no-repeat;
-	background-size: 100%;
-	background-position: bottom;
-	height: 100%;
-	width: 100%;
-	position: absolute;
-}
+	.home_container {
+		background-image: url(/assets/eeek_backgrounds/2.jpg);
+		background-repeat: no-repeat;
+		background-size: 100%;
+		background-position: bottom;
+		height: 100%;
+		width: 100%;
+		position: absolute;
+	}
 
 }    
 
-
-
-.home_container .welcome_circle {
-	height: 350px;
-	width: 350px;
-	opacity: .9;
-	margin: 12% auto;
-	border-radius:50%;
-	font-size:20px;
-	color:#fff;
-	line-height:340px;
-	text-align:center;
-	background:#000;
-	font-family: 'Bree Serif';
-}
-
-
-
-.home_container {
-	background-image: url(/assets/eeek_backgrounds/2.jpg);
-	background-repeat: no-repeat;
-	background-size: 100%;
-	background-position: bottom;
-	height: 100%;
-	width: 100%;
-	position: absolute;
-}
 

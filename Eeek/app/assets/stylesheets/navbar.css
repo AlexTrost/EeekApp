@@ -1,3 +1,15 @@
+/*------------------------------small---------------------------------*/
+
+
+@media (min-width: 320px) and (max-width: 720px) {
+  
+  body {
+    border: 10px green solid;
+  }
+
+
+
+
 nav {
   /*background-color: #323949;*/
   background-color: #000;
