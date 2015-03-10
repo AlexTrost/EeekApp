@@ -7,56 +7,182 @@
     border: 10px green solid;
   }
 
+  nav {
+    background-color: #000;
+    opacity: .9;
+    color: #fff;
+    padding-bottom: 1px;
+    
+  }
+
+  nav ul {
+    list-style-type: none;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+  }
+  nav ul li {
+    display: inline-block;
+    margin: 0 7% 0 7%;
+  }
+  nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 22px;
+    font-family: 'Bree Serif';
+  }
+
+  nav a:hover {
+    text-decoration: underline;
+  }
+  .logo {
+    height: 75px;
+    width: 75px;
+
+  }
 
 
+  .container {
+    background-color: white;
+    width: 30%;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 15px;
+    margin-left: 69%;
+    margin-right: 31%;
+    margin-bottom: 50%;
+    -webkit-box-shadow: -1px 6px 4px 5px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 6px 4px 5px rgba(0,0,0,0.75);
+    box-shadow: -1px 6px 4px 5px rgba(0,0,0,0.75);
+    font-family: verdana;
+  }
 
-nav {
-  /*background-color: #323949;*/
-  background-color: #000;
-  opacity: .9;
-  color: #fff;
-  padding-bottom: 1px;
-  
 }
 
-nav ul {
-  list-style-type: none;
-  text-align: center;
-  padding: 10px;
-  width: 100%;
-}
-nav ul li {
-  display: inline-block;
-  margin: 0 7% 0 7%;
-}
-nav a {
-  text-decoration: none;
-  color: #fff;
-  font-size: 22px;
-  font-family: 'Bree Serif';
-}
-
-nav a:hover {
-  text-decoration: underline;
-}
-.logo {
-  height: 75px;
-  width: 75px;
-
-}
 
 
-.container {
-  background-color: white;
-  width: 30%;
-  text-align: center;
-  border: 2px solid black;
-  border-radius: 15px;
-  margin-left: 69%;
-  margin-right: 31%;
-  margin-bottom: 50%;
-  -webkit-box-shadow: -1px 6px 4px 5px rgba(0,0,0,0.75);
-  -moz-box-shadow: -1px 6px 4px 5px rgba(0,0,0,0.75);
-  box-shadow: -1px 6px 4px 5px rgba(0,0,0,0.75);
-  font-family: verdana;
+/*------------------------------medium---------------------------------*/
+
+@media (min-width: 720px) and (max-width: 1020px) {
+   
+   body {
+    border: 10px red solid;
+    }
+
+    nav {
+    /*background-color: #323949;*/
+    background-color: #000;
+    opacity: .9;
+    color: #fff;
+    padding-bottom: 1px;
+    
+  }
+
+  nav ul {
+    list-style-type: none;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+  }
+  nav ul li {
+    display: inline-block;
+    margin: 0 7% 0 7%;
+  }
+  nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 22px;
+    font-family: 'Bree Serif';
+  }
+
+  nav a:hover {
+    text-decoration: underline;
+  }
+  .logo {
+    height: 75px;
+    width: 75px;
+
+  }
+
+
+  .container {
+    background-color: white;
+    width: 30%;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 15px;
+    margin-left: 69%;
+    margin-right: 31%;
+    margin-bottom: 50%;
+    -webkit-box-shadow: -1px 6px 4px 5px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 6px 4px 5px rgba(0,0,0,0.75);
+    box-shadow: -1px 6px 4px 5px rgba(0,0,0,0.75);
+    font-family: verdana;
+  }
+
+}
+
+
+/*------------------------------large---------------------------------*/
+
+@media (min-width: 1020px) {
+   
+   body {
+    border: 10px blue solid;
+
+    }
+
+
+
+  nav {
+    /*background-color: #323949;*/
+    background-color: #000;
+    opacity: .9;
+    color: #fff;
+    padding-bottom: 1px;
+    
+  }
+
+  nav ul {
+    list-style-type: none;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+  }
+  nav ul li {
+    display: inline-block;
+    margin: 0 7% 0 7%;
+  }
+  nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 22px;
+    font-family: 'Bree Serif';
+  }
+
+  nav a:hover {
+    text-decoration: underline;
+  }
+  .logo {
+    height: 75px;
+    width: 75px;
+
+  }
+
+
+  .container {
+    background-color: white;
+    width: 30%;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 15px;
+    margin-left: 69%;
+    margin-right: 31%;
+    margin-bottom: 50%;
+    -webkit-box-shadow: -1px 6px 4px 5px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 6px 4px 5px rgba(0,0,0,0.75);
+    box-shadow: -1px 6px 4px 5px rgba(0,0,0,0.75);
+    font-family: verdana;
+  }
+
 }
