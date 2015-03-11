@@ -20,7 +20,7 @@
   .carousel_div #upload_carousel .upload_div {
     border: 6px black solid;
     background-color: white;
-    width: 90%;
+    width: 95%;
     height: 40em;
     margin: 5em auto;
     display: table;
@@ -32,10 +32,10 @@
 
   #upload_carousel img {
     max-width: 95%;
-    max-height: 39em;
+    max-height: 34em;
     display: table-cell;
     vertical-align: middle;
-    padding-top: 1em;
+    padding-top: 3em;
     margin-left: auto;
     margin-right: auto;
   }
@@ -65,8 +65,8 @@
   }
 
   .carousel_div .cloud2 {
-    top: 8em;
-    left: 94em;
+    top: 48em;
+    left: 24em;
   }
 
   .carousel_div .cloud3 {
@@ -75,15 +75,8 @@
   }
 
   .carousel_div .cloud5 {
-    left: 73em;
-    top: 29em;
-  }
-
-  .stop {
-    width: 6em;
-    text-align: center;
-    border: 1px black solid;
-    border-radius: 10%;
+    left: 15em;
+    top: 52em;
   }
 
 }
@@ -108,7 +101,7 @@
   .carousel_div #upload_carousel .upload_div {
     border: 6px black solid;
     background-color: white;
-    width: 75%;
+    width: 85%;
     height: 32em;
     margin: 8em auto;
     display: table;
@@ -148,23 +141,23 @@
   }
 
   .carousel_div .cloud1 {
+    top: 1.5em;
     left: 50em;
-    top: 3em;
   }
 
   .carousel_div .cloud2 {
-    top: 8em;
-    left: 94em;
+    top: 48em;
+    left: 24em;
   }
 
   .carousel_div .cloud3 {
-    left: 3em;
     top: 44em;
+    left: 3em;
   }
 
   .carousel_div .cloud5 {
-    left: 73em;
     top: 29em;
+    left: 73em;
   }
 
   .stop {
