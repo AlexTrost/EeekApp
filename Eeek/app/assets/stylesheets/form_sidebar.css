@@ -1,6 +1,4 @@
 #side_bar {
-		top: stick;
-    /*left:100%;*/
     right:0;
     width: 28em;
     height: 100%;
@@ -23,10 +21,7 @@ pre, form, fieldset, input, textarea, p, blockquote, th, td {
 
 .form h1 {
 	margin: 30% 1.5% 0 1.5%;
-	/*width: 98%;*/
 	text-align: center;
-	/*font-family: 'Bree Serif';
-	color: white;*/
 }
 
 
@@ -100,8 +95,6 @@ textarea {
 	text-align: center;
 	display: table;
 	width: 100%;
-  
-
 }
 
 #checkbox_list .checkbox{
@@ -111,7 +104,6 @@ textarea {
 	width: 48%;
 	font-family: "Bree Serif";
 	font-size: 20px;
-
 }
 
 #checkbox_list #text_checkbox {
