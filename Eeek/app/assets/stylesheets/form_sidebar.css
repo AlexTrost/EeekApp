@@ -5,9 +5,14 @@
     width: 20%;
     height: 100%;
     position: absolute;
-    border: 4px black solid;
-    background-color: #B4B4B4;
+    border: 5px black solid;
     display: none;
+		background-image: url(/assets/eeek_backgrounds/7.jpg);
+		background-repeat: repeat;
+		background-size: 100%;
+    font-family: "Bree Serif";
+  	color: black;
+  	opacity: .95;
   }
 
   .form body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, 
@@ -20,7 +25,8 @@ pre, form, fieldset, input, textarea, p, blockquote, th, td {
 	margin: 30% 1.5% 0 1.5%;
 	/*width: 98%;*/
 	text-align: center;
-	font-family: 'Bree Serif'
+	/*font-family: 'Bree Serif';
+	color: white;*/
 }
 
 
