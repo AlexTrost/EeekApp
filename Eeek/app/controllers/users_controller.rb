@@ -13,6 +13,7 @@ class UsersController < ApplicationController
 	end
 
 	def create	
+		p "ho" * 100
 	end
 
 	def destory
