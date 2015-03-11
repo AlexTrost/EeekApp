@@ -40,21 +40,34 @@ $(document).on('ready page:load', function() {
   }
 
   function fontSize() {
+    var wi = $(window).width();
     var $quotes = $("#upload_carousel p");
     for (var i = 0; i < $quotes.length; i++) {
       var $quote = $($quotes[i])
       var $numWords = $quote.text().split(" ").length;
-        if (($numWords >= 1) && ($numWords < 25)) {
+        if (($numWords >= 1) && ($numWords < 25) && (wi > 720)) {
             $quote.css("font-size", "50px");
         }
-        else if (($numWords >= 25) && ($numWords < 50)) {
+        else if (($numWords >= 1) && ($numWords < 25) && (wi <= 720)) {
             $quote.css("font-size", "40px");
         }
-        else if (($numWords >= 50) && ($numWords < 100)) {
+        else if (($numWords >= 25) && ($numWords < 50) && (wi > 720)) {
+            $quote.css("font-size", "40px");
+        }
+        else if (($numWords >= 25) && ($numWords < 50) && (wi <= 720)) {
+            $quote.css("font-size", "35px");
+        }
+        else if (($numWords >= 50) && ($numWords < 100) && (wi > 720)) {
             $quote.css("font-size", "30px");
         }
-        else {
+        else if (($numWords >= 50) && ($numWords < 100) && (wi <= 720)) {
             $quote.css("font-size", "25px");
+        }
+        else if (wi > 720) {
+            $quote.css("font-size", "25px");
+        }
+        else {
+            $quote.css("font-size", "15px");
         }
     }
   }
