@@ -1,6 +1,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<%= render partial: 'dashboard/top_bar' %>
+	
+	<%= render partial: 'uploads/upload_form' %>
 
 	<div class="home_container">
 	  <div class="welcome_circle">
@@ -8,8 +10,6 @@
 	    	<h2><%= "Welcome, #{@user.name}"%> </h2>
 	    </div>	
 	  </div>
-
-		<%= render partial: 'uploads/upload_form' %>
 
 	</div>
 
