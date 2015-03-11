@@ -1,34 +1,131 @@
-.thumbnail_ul {
-	list-style-type: none;
-	display: table;
+/*------------------------------small---------------------------------*/
+
+
+@media (min-width: 320px) and (max-width: 720px) {
+
+  body { border: 2px green solid;}
+
+	.thumbnail_ul {
+		list-style-type: none;
+		display: table;
+	}
+
+	.thumbnail_li {
+		display: inline-block;
+		border: 3px black solid;
+		margin: 10px 3px 0 0;
+		text-align: center;
+
+	}
+
+	.thumbnail {
+		height: 20em;
+		display: table-cell;
+		vertical-align: middle;
+	}
+
+	.text_thumbnail {
+		width: 30em;
+	}
+
+	.hidden_thumbnail_message {
+		position: absolute;
+		line-height: 8em;
+		color: red;
+		font-size: 40px;
+		display: none;
+	 }
+
+	 .upload_index_wrapper {
+	 	padding: 1em 0 0 2em;
+	 }
+
 }
 
-.thumbnail_li {
-	display: inline-block;
-	border: 3px black solid;
-	margin: 10px 3px 0 0;
-	text-align: center;
+/*------------------------------medium---------------------------------*/
+
+
+@media (min-width: 720px) and (max-width: 1020px) {
+
+  body { border: 2px blue solid;}
+
+	.thumbnail_ul {
+		list-style-type: none;
+		display: table;
+	}
+
+	.thumbnail_li {
+		display: inline-block;
+		border: 3px black solid;
+		margin: 10px 3px 0 0;
+		text-align: center;
+
+	}
+
+	.thumbnail {
+		height: 20em;
+		display: table-cell;
+		vertical-align: middle;
+	}
+
+	.text_thumbnail {
+		width: 30em;
+	}
+
+	.hidden_thumbnail_message {
+		position: absolute;
+		line-height: 8em;
+		color: red;
+		font-size: 40px;
+		display: none;
+	 }
+
+	 .upload_index_wrapper {
+	 	padding: 1em 0 0 2em;
+	 }
 
 }
 
-.thumbnail {
-	height: 20em;
-	display: table-cell;
-	vertical-align: middle;
+/*------------------------------large---------------------------------*/
+
+
+@media (min-width: 1020px) {
+
+  body { border: 2px red solid;}
+
+	.thumbnail_ul {
+		list-style-type: none;
+		display: table;
+	}
+
+	.thumbnail_li {
+		display: inline-block;
+		border: 3px black solid;
+		margin: 10px 3px 0 0;
+		text-align: center;
+
+	}
+
+	.thumbnail {
+		height: 20em;
+		display: table-cell;
+		vertical-align: middle;
+	}
+
+	.text_thumbnail {
+		width: 30em;
+	}
+
+	.hidden_thumbnail_message {
+		position: absolute;
+		line-height: 8em;
+		color: red;
+		font-size: 40px;
+		display: none;
+	 }
+
+	 .upload_index_wrapper {
+	 	padding: 1em 0 0 2em;
+	 }
+
 }
-
-.text_thumbnail {
-	width: 30em;
-}
-
-.hidden_thumbnail_message {
-	position: absolute;
-	line-height: 8em;
-	color: red;
-	font-size: 40px;
-	display: none;
- }
-
- .upload_index_wrapper {
- 	padding: 1em 0 0 2em;
- }
