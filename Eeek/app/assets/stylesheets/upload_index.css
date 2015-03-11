@@ -4,7 +4,7 @@
 @media (min-width: 320px) and (max-width: 720px) {
 
   body { border: 2px green solid;}
-
+	
 	.thumbnail_ul {
 		list-style-type: none;
 		display: table;
@@ -15,17 +15,23 @@
 		border: 3px black solid;
 		margin: 10px 3px 0 0;
 		text-align: center;
+		max-width: 48%;
 
 	}
 
 	.thumbnail {
-		height: 20em;
+		height: 12em;
 		display: table-cell;
 		vertical-align: middle;
+		max-width: 100%;
+	}
+
+	.thumbnail_li a {
+		font-size: 23px;
 	}
 
 	.text_thumbnail {
-		width: 30em;
+		width: 28em;
 	}
 
 	.hidden_thumbnail_message {
@@ -59,17 +65,18 @@
 		border: 3px black solid;
 		margin: 10px 3px 0 0;
 		text-align: center;
+		max-width: 90%;
 
 	}
 
 	.thumbnail {
-		height: 20em;
+		height: 18em;
 		display: table-cell;
 		vertical-align: middle;
 	}
 
 	.text_thumbnail {
-		width: 30em;
+		width: 23em;
 	}
 
 	.hidden_thumbnail_message {

@@ -8,7 +8,7 @@
 			<% if @user_uploads && @user_uploads.length > 0 %>
 				<% @user_uploads.each do |upload| %>
 					<li class="thumbnail_li">
-						<h3 class="hidden_thumbnail_message">Click to enlarge</h3>
+						<!-- <h3 class="hidden_thumbnail_message">Click to enlarge</h3> -->
 						<% if upload.text %>
 							<p class="thumbnail text_thumbnail"><%= upload.text %></p>
 							<%= link_to "Delete", upload_path(upload), method: :delete %>
