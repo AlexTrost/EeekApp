@@ -27,6 +27,9 @@ class UsersController < ApplicationController
 		p "ho" * 100
 	end
 
+	def new
+	end
+
 	def destory
 		# this needs to be a thing...
 	end
