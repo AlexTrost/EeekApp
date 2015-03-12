@@ -6,13 +6,19 @@ class UsersController < ApplicationController
 	def login
 		p "2" * 100
 		if params[:email] == "" || params[:password] == ""
+			flash[:error] = "Email and Password fields cannot be blank"
 			redirect_to controller: 'login', action: 'index'
-			flash[:error] = "Unable to create person with handle"
+		elsif User.find_by(email: params[:email]) == nil
+			flash[:error] = "Email invalid"
+			redirect_to controller: 'login', action: 'index'
 		else
-			user = User.find_by(email: params[:email])
+			user = User.find_by(email: params[:email])	
 			if user.password == params[:passoword]
 				sign_in(:user, user)
 				redirect_to controller: 'home', action: 'index'
+			else
+				flash[:error] = "Password invalid"
+				redirect_to controller: 'login', action: 'index'
 			end
 		end
 	end
