@@ -17,6 +17,8 @@ Rails.application.routes.draw do
   post 'users/login' => "users#login"
   get 'uploads/trigger' => "uploads#trigger"
 
+  get '*path' => redirect('/')
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
