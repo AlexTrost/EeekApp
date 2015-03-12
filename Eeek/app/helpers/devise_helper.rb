@@ -1,9 +1,15 @@
 module DeviseHelper
-  def devise_error_messages!
-    resource.errors.full_messages.map { |msg| content_tag(:li, msg) }.join
-  end
+  # def devise_error_messages!
+  #   return '' if User.errors.empty?
 
-  def devise_error_messages2!
-    resource.errors.full_messages.map { |msg| content_tag(:p, msg) }.join
-  end
+  #   messages = users.errors.full_messages.map { |msg| content_tag(:li, msg) }.join
+  #   html = <<-HTML
+  #   <div class="alert alert-error alert-block"> <button type="button"
+  #   class="close" data-dismiss="alert">x</button>
+  #     #{messages}
+  #   </div>
+  #   HTML
+
+  #   html.html_safe
+  # end
 end
