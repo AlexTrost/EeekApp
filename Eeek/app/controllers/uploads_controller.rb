@@ -33,10 +33,10 @@ class UploadsController < ApplicationController
     respond_to do |format|
       if @upload.save
         format.js { render :'upload_confirm' }
-        format.html { render :'dashboard/index' }
+        format.html { render :'home/index' }
         # format.html {redirect_to dashboard_index_path, notice: "The upload has been uploaded."}
       else
-        format.js { render :upload_fail }
+        # format.js { render :upload_fail }
       end
     end
   end
