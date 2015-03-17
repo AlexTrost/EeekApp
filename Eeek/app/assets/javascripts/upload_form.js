@@ -28,7 +28,7 @@ $(document).on("ready page:load", function() {
 				$sidebar.hide("slide", { direction: "right" }, 1000);
 				$("#upload_button").html("New Upload")
 			} else {
-				$sidebar.show("slide", { direction: "right" }, 1000);
+				$sidebar.fadeIn();
 				$("#upload_button").html("Hide Form")
 			}
 		})
