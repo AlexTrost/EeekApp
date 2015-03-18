@@ -10,7 +10,7 @@
 
 	.thumbnail_li {
 		display: inline-block;
-		border: 3px black solid;
+		border: 2px black solid;
 		margin: 10px 3px 0 0;
 		text-align: center;
 		max-width: 48%;
@@ -18,18 +18,18 @@
 	}
 
 	.thumbnail {
-		height: 12em;
+		height: 11em;
 		display: table-cell;
 		vertical-align: middle;
 		max-width: 100%;
 	}
 
 	.thumbnail_li a {
-		font-size: 23px;
+		font-size: 13px;
 	}
 
 	.text_thumbnail {
-		width: 28em;
+		width: 24em;
 	}
 
 	.hidden_thumbnail_message {
@@ -58,7 +58,7 @@
 
 	.thumbnail_li {
 		display: inline-block;
-		border: 3px black solid;
+		border: 2px black solid;
 		margin: 10px 3px 0 0;
 		text-align: center;
 		max-width: 90%;
@@ -66,13 +66,13 @@
 	}
 
 	.thumbnail {
-		height: 18em;
+		height: 12em;
 		display: table-cell;
 		vertical-align: middle;
 	}
 
 	.text_thumbnail {
-		width: 23em;
+		width: 19em;
 	}
 
 	.hidden_thumbnail_message {
@@ -101,20 +101,20 @@
 
 	.thumbnail_li {
 		display: inline-block;
-		border: 3px black solid;
+		border: 2px black solid;
 		margin: 10px 3px 0 0;
 		text-align: center;
 
 	}
 
 	.thumbnail {
-		height: 20em;
+		height: 13em;
 		display: table-cell;
 		vertical-align: middle;
 	}
 
 	.text_thumbnail {
-		width: 30em;
+		width: 23em;
 	}
 
 	.hidden_thumbnail_message {
