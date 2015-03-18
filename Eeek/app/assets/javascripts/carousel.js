@@ -61,7 +61,7 @@ $(document).on('ready page:load', function() {
             $quote.css("font-size", "25px");
         }
         else if (($numWords >= 50) && ($numWords < 100) && (wi <= 720)) {
-            $quote.css("font-size", "15px");
+            $quote.css("font-size", "15 px");
         }
         else if (wi > 720) {
             $quote.css("font-size", "20px");
