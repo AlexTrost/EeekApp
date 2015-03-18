@@ -49,19 +49,19 @@ $(document).on('ready page:load', function() {
             $quote.css("font-size", "45px");
         }
         else if (($numWords >= 1) && ($numWords < 25) && (wi <= 720)) {
-            $quote.css("font-size", "35px");
+            $quote.css("font-size", "25px");
         }
         else if (($numWords >= 25) && ($numWords < 50) && (wi > 720)) {
             $quote.css("font-size", "35px");
         }
         else if (($numWords >= 25) && ($numWords < 50) && (wi <= 720)) {
-            $quote.css("font-size", "30px");
+            $quote.css("font-size", "20px");
         }
         else if (($numWords >= 50) && ($numWords < 100) && (wi > 720)) {
             $quote.css("font-size", "25px");
         }
         else if (($numWords >= 50) && ($numWords < 100) && (wi <= 720)) {
-            $quote.css("font-size", "20px");
+            $quote.css("font-size", "15px");
         }
         else if (wi > 720) {
             $quote.css("font-size", "20px");
