@@ -9,6 +9,9 @@
     <div class="clouds cloud_6"> </div>
 
     <div class="login_page">
+
+    <%= link_to "Sign in with Google", user_omniauth_authorize_path(:google_oauth2), class: "social-google" %>
+
       <h1 class="eeek_title">Eeek.</h1>
       <% if @errors %>
         <% @errors.each do |attribute, error| %>

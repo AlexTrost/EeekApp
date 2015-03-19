@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
-  devise_for :users
+  # devise_for :users
 
-  
+  devise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth_callbacks" }
   # devise_for :users, path: "", controllers: { sessions: "login", registrations: "login" }, :skip =>     [:sessions, :registrations], :path_names => { :sign_up => "/", :sign_in => "/" }
   # devise_for :users, path: "", controllers: { sessions: "users", registrations: "users" }, path_names: { sign_in: '/', password: '/', confirmation: '/', unlock: '/', sign_up: '/', sign_out: '/'}
  
@@ -18,8 +18,22 @@ Rails.application.routes.draw do
 
 
 
+
   post 'users/login' => "users#login"
   get 'uploads/trigger' => "uploads#trigger"
+
+
+  # GoogleAuthExample::Application.routes.draw do
+  #   get 'auth/:provider/callback', to: 'sessions#create'
+  #   get 'auth/failure', to: redirect('/')
+  #   get 'signout', to: 'sessions#destroy', as: 'signout'
+
+  #   resources :sessions, only: [:create, :destroy]
+  #   resource :home, only: [:show]
+
+  #   root to: "home#show"
+  # end
+
 
   get '*path' => redirect('/')
 

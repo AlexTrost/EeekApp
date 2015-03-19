@@ -16,6 +16,8 @@ gem 'httparty'
 
 gem 'devise'
 
+gem 'dotenv-rails'
+
 gem 'carrierwave'
 
 # gem 'sidekiq'
