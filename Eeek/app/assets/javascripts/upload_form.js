@@ -29,6 +29,7 @@ $(document).on("ready page:load", function() {
 				$("#upload_button").html("New Upload")
 			} else {
 				$sidebar.fadeIn();
+				$("#upload_text").val("")
 				$("#upload_button").html("Hide Form")
 			}
 		})
