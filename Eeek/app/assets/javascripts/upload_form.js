@@ -35,15 +35,10 @@ $(document).on("ready page:load", function() {
 		})	
 	}
 
-		function formLeaveHide() {
-			$("#side_bar").mouseleave(function() {
-				$("#side_bar").hide("slide", { direction: "right" }, 1000);
-			})
-		}
+		
 
 	
 	formSideMenu()
 	renderUploadForm()
 	renderTextForm()
-	formLeaveHide()
 })
