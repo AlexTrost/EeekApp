@@ -11,7 +11,7 @@ $(document).on('ready page:load', function() {
         itemsMobile : false // itemsMobile disabled - inherit from itemsTablet option
     });
 
-    owl.trigger('owl.play',8500)
+    owl.trigger('owl.play',20500)
     // Custom Navigation Events
     $(".next").click(function(){
       owl.trigger('owl.next');
