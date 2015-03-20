@@ -32,20 +32,18 @@ $(document).on("ready page:load", function() {
 				$("#upload_text").val("")
 				$("#upload_button").html("Hide Form")
 			}
-		})
+		})	
+	}
 
 		function formLeaveHide() {
 			$("#side_bar").mouseleave(function() {
-				this.hide("slide", { direction: "right" }, 1000);
+				$("#side_bar").hide("slide", { direction: "right" }, 1000);
 			})
 		}
-
-		}
-	}
-
 
 	
 	formSideMenu()
 	renderUploadForm()
 	renderTextForm()
+	formLeaveHide()
 })
