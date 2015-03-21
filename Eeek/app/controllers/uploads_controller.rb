@@ -27,17 +27,23 @@ class UploadsController < ApplicationController
   end
 
   def create
-    params[:user_id] = current_user.id
-    @upload = Upload.new(upload_params)
-    @upload.user_id = current_user.id
-    respond_to do |format|
-      if @upload.save
-        format.js { render :'upload_confirm' }
-        # format.html { render :'uploads/index' }
-        format.html { redirect_to :back }
-        # format.html {redirect_to dashboard_index_path, notice: "The upload has been uploaded."}
-      else
-        # format.js { render :upload_fail }
+    if (params[:upload][:text] == nil || params[:upload][:text] == "" ) && (params[:upload][:attachment] == nil)
+      return "Make sure to write or select something"
+      # flash[:error] = "Make sure to write or upload something before you hit save!"
+    else
+      params[:user_id] = current_user.id
+      @upload = Upload.new(upload_params)
+      @upload.user_id = current_user.id
+      respond_to do |format|
+        if @upload.save
+          format.js { render :'upload_confirm' }
+          format.html { redirect_to :back }
+          # format.html { render :'uploads/index' }
+          # format.html {redirect_to dashboard_index_path, notice: "The upload has been uploaded."}
+        else
+          format.js { render :upload_fail }
+          return "Upload failed"
+        end
       end
     end
   end

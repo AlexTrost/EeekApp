@@ -8,6 +8,7 @@
       <li id="upload_checkbox" class="checkbox">Photo Entry </li>
     </ul>
 
+    <%= flash[:error] if flash[:error] %>
 
     <hr>
     <%= form_for :upload, :url => uploads_path, :method => :post, html: { multipart: true, id: "new_text_form" }, remote: true do |f| %>
