@@ -7,9 +7,9 @@
   <%= csrf_meta_tags %>
 
 </head>
-<body>
+<body class="<%= params[:controller] %>_controller">
 
-<%= yield %>
+	<%= yield %>
 
 </body>
 </html>
