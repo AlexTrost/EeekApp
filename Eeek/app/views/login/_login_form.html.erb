@@ -2,7 +2,7 @@
 
 	<%= flash[:error] %>
       
-  <p>Or sign in the old fashion way. Ya dinosaur.</p>
+  <p>Or sign in the old fashion way. Ya <span id="dinosaur_word">dinosaur.</span></p>
 
 	<%= form_tag users_login_path, method: :post, :html => {:class => "login_form"} do %>
 	  <%= text_field_tag :email, "", placeholder: 'Email' %>
