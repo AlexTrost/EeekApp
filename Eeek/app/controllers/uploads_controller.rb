@@ -63,7 +63,10 @@ class UploadsController < ApplicationController
   def destroy
     @upload = Upload.find(params[:id])
     @upload.destroy
-    redirect_to uploads_path, notice:  "The upload has been deleted."
+    respond_to do |format|
+      format.js { render :'upload_thumbnail_delete'}
+      format.html {redirect_to uploads_path, notice:  "The upload has been deleted."}
+    end
   end
 
 private
