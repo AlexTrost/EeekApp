@@ -36,7 +36,7 @@ class UploadsController < ApplicationController
       @upload.user_id = current_user.id
       respond_to do |format|
         if @upload.save
-          format.js { render :'upload_confirm' }
+          format.js { render :'upload_confirm', locals: { id: @upload.id } }
           format.html { redirect_to :back }
           # format.html { render :'uploads/index' }
           # format.html {redirect_to dashboard_index_path, notice: "The upload has been uploaded."}
@@ -61,7 +61,6 @@ class UploadsController < ApplicationController
   # end
 
   def destroy
-    p "hi" * 100
     @upload = Upload.find(params[:id])
     @upload.destroy
     respond_to do |format|
