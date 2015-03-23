@@ -13,7 +13,7 @@
 						<!-- <h3 class="hidden_thumbnail_message">Click to enlarge</h3> -->
 						<% if upload.text %>
 							<p class="thumbnail text_thumbnail"><%= upload.text %></p>
-							<%= link_to "Delete", upload_path(upload), method: :delete %>
+							<%= link_to "Delete", upload_path(upload), method: :delete, class: "delete_button"  %>
 						<% else  %>
 							<img src=<%= upload.attachment %> class="thumbnail">
 							<%= link_to "Delete", upload_path(upload), method: :delete, class: "delete_button" %>
@@ -35,10 +35,10 @@
 					<h3 class="hidden_thumbnail_message">Click to enlarge</h3>
 					<% if upload.text %>
 						<p class="thumbnail text_thumbnail"><%= upload.text %></p>
-						<%= link_to "Delete", upload_path(upload), method: :delete %>
+						<%= link_to "Delete", upload_path(upload), method: :delete, class: "delete_button"  %>
 					<% else  %>
 						<img src=<%= upload.attachment %> class="thumbnail">
-						<%= link_to "Delete", upload_path(upload), method: :delete %>
+						<%= link_to "Delete", upload_path(upload), method: :delete, class: "delete_button"  %>
 					<% end %>
 				</li>
 			<% end %>
