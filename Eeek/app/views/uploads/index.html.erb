@@ -16,7 +16,7 @@
 							<%= link_to "Delete", upload_path(upload), method: :delete %>
 						<% else  %>
 							<img src=<%= upload.attachment %> class="thumbnail">
-							<%= link_to "Delete", upload_path(upload), method: :delete %>
+							<%= link_to "Delete", upload_path(upload), method: :delete, class: "delete_button" %>
 						<% end %>
 					</li>
 				<% end %>
