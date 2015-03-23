@@ -64,7 +64,7 @@ class UploadsController < ApplicationController
     @upload = Upload.find(params[:id])
     @upload.destroy
     respond_to do |format|
-      format.js { render :'upload_thumbnail_delete'}
+      format.js { render :'upload_thumbnail_delete', locals: { id: params[:id] } }
       format.html {redirect_to uploads_path, notice:  "The upload has been deleted."}
     end
   end

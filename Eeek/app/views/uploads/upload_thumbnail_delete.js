@@ -1,1 +1,2 @@
-alert('hi ho')
+var thumbnail = "#" + <%=id%> + "_thumbnail"
+$(thumbnail).fadeOut()
