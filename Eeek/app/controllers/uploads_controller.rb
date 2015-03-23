@@ -61,6 +61,7 @@ class UploadsController < ApplicationController
   # end
 
   def destroy
+    p "hi" * 100
     @upload = Upload.find(params[:id])
     @upload.destroy
     respond_to do |format|
