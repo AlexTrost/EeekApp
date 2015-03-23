@@ -36,7 +36,7 @@ class UploadsController < ApplicationController
       @upload.user_id = current_user.id
       respond_to do |format|
         if @upload.save
-          format.js { render :'upload_confirm', locals: { id: @upload.id } }
+          format.js { render :'upload_confirm', locals: { upload: @upload } }
           format.html { redirect_to :back }
           # format.html { render :'uploads/index' }
           # format.html {redirect_to dashboard_index_path, notice: "The upload has been uploaded."}

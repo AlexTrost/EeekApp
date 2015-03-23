@@ -1,0 +1,9 @@
+<li class="thumbnail_li" id=<%="#{upload.id}_thumbnail"%>>
+	<% if upload.text %>
+		<p class="thumbnail text_thumbnail"><%= upload.text %></p>
+		<%= link_to "Delete", upload_path(upload), method: :delete, class: "delete_button", :remote => true  %>
+	<% else  %>
+		<img src=<%= upload.attachment %> class="thumbnail">
+		<%= link_to "Delete", upload_path(upload), method: :delete, class: "delete_button", :remote => true %>
+	<% end %>
+</li>

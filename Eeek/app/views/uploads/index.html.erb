@@ -6,7 +6,7 @@
 
 	<h1> All of your things here </h1>
 
-		<ul class="thumbnail_ul">
+		<ul class="thumbnail_ul personal_ul">
 			<% if @user_uploads && @user_uploads.length > 0 %>
 				<% @user_uploads.each do |upload| %>
 					<li class="thumbnail_li" id=<%="#{upload.id}_thumbnail"%>>
@@ -22,7 +22,7 @@
 				<% end %>
 			<% else %>
 				<hr>
-				<p>You haven't uploaded anything yet! <br> Click the link in the top bar to get started.</p>
+				<p class="nothing_yet">You haven't uploaded anything yet! <br> Click the link in the top bar to get started.</p>
 			<% end %>
 		</ul>
 		<br>
