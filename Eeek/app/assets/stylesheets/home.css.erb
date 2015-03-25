@@ -15,21 +15,26 @@
 }
 
 	.home_container .welcome_circle:hover {
-		-ms-transform: rotate(7deg); /* IE 9 */
-    -webkit-transform: rotate(7deg); /* Chrome, Safari, Opera */
-    transform: rotate(7deg);
-    transition: .5s;
-		background: yellow;
+		-ms-transform: rotate(360deg); /* IE 9 */
+    -webkit-transform: rotate(360deg); /* Chrome, Safari, Opera */
+    transform: rotate(360deg);
+    transition: .9s;
+		background: #FFCC00;
+
 	}
 
 	.hidden_circle_message {
 		display: none;
+		color: black;
 	}
 
-	.home_container .welcome_circle:hover + .circle_message {
-		color: green;
-		  margin-left: 130px;
+	.home_container .welcome_circle:hover .circle_message {
+		display: none;
+	}
 
+	.home_container .welcome_circle:hover .hidden_circle_message {
+		display: block;
+    transition: .5s;
 	}
 
 
