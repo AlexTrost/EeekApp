@@ -14,6 +14,25 @@
 		font-family: 'Bree Serif';
 }
 
+	.home_container .welcome_circle:hover {
+		-ms-transform: rotate(7deg); /* IE 9 */
+    -webkit-transform: rotate(7deg); /* Chrome, Safari, Opera */
+    transform: rotate(7deg);
+    transition: .5s;
+		background: yellow;
+	}
+
+	.hidden_circle_message {
+		display: none;
+	}
+
+	.home_container .welcome_circle:hover + .circle_message {
+		color: green;
+		  margin-left: 130px;
+
+	}
+
+
 	.home_container {
 		background-image: url(<%= asset_path 'eeek_backgrounds/2.jpg' %>);
 		background-repeat: no-repeat;
