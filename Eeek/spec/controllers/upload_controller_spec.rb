@@ -44,7 +44,7 @@ RSpec.describe UploadsController, :type => :controller do
  			expect(assigns(:complimentary_uploads)).to eq Upload.where(complimentary: "true") #this test only works with one user in the test database.
  		end
  		it 'displays the text uploads' do
-      @upload = Upload.create(name: "hey", text: "howdy")
+      @upload = Upload.create(text: "howdy")
       get :index
       response.body { should have_selector('p', text: @upload.text) }
     end
@@ -63,18 +63,18 @@ RSpec.describe UploadsController, :type => :controller do
 		login_user 
   	it 'creates new upload with valid parameters' do
       expect {
-        post :create, :upload => {name: "hi", text: "huo"}
+        post :create, :upload => {text: "huo"}
       }.to change { Upload.count }.by(1)
     end
   end
 
-  # describe "upload#destroy" do
-		# login_user 
-  # 	it 'deletes uploads' do 
-  #   	@upload = Upload.create(name: "bleh", text: "bleeehh")
-  #   	delete :destroy, id: @upload.id 
-  #   	@upload.should eq(nil)
-  # 	end
-  # end
+  describe "upload#destroy" do
+		login_user 
+    it 'deletes uploads' do 
+      @upload = Upload.create(text: "bleeehh")
+    	delete :destroy, id: @upload.id 
+    	expect(@upload).to be(nil)
+  	end
+  end
 
 end

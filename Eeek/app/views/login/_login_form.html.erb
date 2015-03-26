@@ -1,9 +1,9 @@
 <div class="login_div">
 
-	<%= flash[:error] %>
       
   <p>Or sign in the old fashion way. Ya <span id="dinosaur_word">dinosaur.</span></p>
 
+	<div class="error_messages"><%= flash[:error] %></div>
 	<%= form_tag users_login_path, method: :post, :html => {:class => "login_form"} do %>
 	  <%= text_field_tag :email, "", placeholder: 'Email' %>
 	  <%= password_field_tag :password, "", placeholder: "Password" %>
