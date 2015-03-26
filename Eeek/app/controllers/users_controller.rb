@@ -13,7 +13,7 @@ class UsersController < ApplicationController
 			redirect_to controller: 'login', action: 'index'
 		else
 			user = User.find_by(email: params[:email])	
-			if user.password == params[:passoword]
+			if user.valid_password?(params[:password])
 				sign_in(:user, user)
 				redirect_to controller: 'home', action: 'index'
 			else
@@ -21,6 +21,10 @@ class UsersController < ApplicationController
 				redirect_to controller: 'login', action: 'index'
 			end
 		end
+	end
+
+	def sign_up
+		p "hohi" * 100
 	end
 
 	def create	
