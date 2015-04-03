@@ -19,6 +19,7 @@ gem 'devise'
 gem 'dotenv-rails'
 
 gem 'carrierwave'
+gem "fog-aws"
 
 # gem 'sidekiq'
 
