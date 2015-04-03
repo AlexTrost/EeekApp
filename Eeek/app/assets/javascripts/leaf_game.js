@@ -13,10 +13,14 @@ $(document).on('ready page:load', function() {
 	}
 
 	function LeafDrop() {
-		$('.click_leaf').animate({"top":"100%"}, 2000)
+		$('.click_leaf').animate({"top":"100%"}, 6000)
+		if ($('.click_leaf').css("margin-bottom") === "0px") {
+			newLeaf()
+		}
 	}
 
 	$("body").on("click", ".click_leaf", function() {
+		$(".click_leaf").remove()
 		newLeaf()
 		increaseScore()
 	})
