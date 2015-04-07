@@ -1,6 +1,7 @@
 <div class="signup_div">
 	<h1 class="signup_form_header">Don't have an account? <button id="signup_form_display_button">Sign Up</button></h1>
-
+    <div class="error_messages"><%= session[:sign_up_error] if session[:sign_up_error] %></div>
+		
 
 		<%= form_for :user, url: users_path, method: :post, :html => {:class => "signup_form"} do |f| %>
 			<%= f.text_field :name, :placeholder => "What's your first name?" %>

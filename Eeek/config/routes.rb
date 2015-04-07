@@ -39,7 +39,6 @@ Rails.application.routes.draw do
 
   get '*path' => redirect('/')
 
-
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
