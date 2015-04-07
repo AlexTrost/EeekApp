@@ -17,6 +17,9 @@
 //= require jquery-ui/effect.all
 //= require jquery-ui/effect-bounce
 //= require owl.carousel
+//= require highcharts/highcharts                                                           
+//= require highcharts/highcharts-more                                                         
+//= require highcharts/highstock
 
 
 //= require_tree .
