@@ -21,6 +21,7 @@ gem 'dotenv-rails'
 gem 'carrierwave'
 gem "fog"
 gem "mini_magick"
+gem 'figaro'
 
 # gem 'sidekiq'
 
