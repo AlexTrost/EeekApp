@@ -33,6 +33,8 @@ gem 'owlcarousel-rails'
 
 # Use jquery as the JavaScript library
 
+gem 'lazy_high_charts'
+
 gem 'jquery-rails'
 gem 'jquery-ui-rails'
 gem 'jquery-turbolinks'
