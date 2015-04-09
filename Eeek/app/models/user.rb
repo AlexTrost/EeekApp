@@ -8,6 +8,7 @@ devise :omniauthable, :omniauth_providers => [:google_oauth2]
          
   has_many :contacts
   has_many :uploads
+  has_many :moods
 
   after_create :complimentary_goodstuff
 
