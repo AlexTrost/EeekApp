@@ -56,6 +56,7 @@ group :development, :test do
   gem 'rspec-rails'
  	gem 'jasmine-rails'
 	gem 'sqlite3'
+  # gem 'mysql2'
 end
 
 group :production do

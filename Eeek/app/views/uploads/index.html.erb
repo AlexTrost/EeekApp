@@ -4,7 +4,7 @@
 
 <div class="upload_index_wrapper">
 
-	<%= pie_chart User.group(:name).count %>
+	 <%= line_chart User.group(:created_at) %>
 
 
 	<h1> All of your things here </h1>

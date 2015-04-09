@@ -15,6 +15,8 @@ GEM
       activesupport (= 4.1.8)
       builder (~> 3.1)
       erubis (~> 2.7.0)
+    active_median (0.1.2)
+      activerecord
     activemodel (4.1.8)
       activesupport (= 4.1.8)
       builder (~> 3.1)
@@ -176,8 +178,6 @@ GEM
       fog-core
       nokogiri (~> 1.5, >= 1.5.11)
     formatador (0.2.5)
-    groupdate (2.4.0)
-      activesupport (>= 3)
     hashie (3.4.0)
     hike (1.2.3)
     httparty (0.13.3)
@@ -338,6 +338,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  active_median (~> 0.1.0)
   bcrypt-ruby (~> 3.1.2)
   capybara
   carrierwave
@@ -351,7 +352,6 @@ DEPENDENCIES
   faker
   figaro
   fog
-  groupdate
   httparty
   jasmine-rails
   jbuilder (~> 2.0)
