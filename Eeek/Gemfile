@@ -34,7 +34,7 @@ gem 'owlcarousel-rails'
 # Use jquery as the JavaScript library
 
 gem "chartkick"
-# gem 'groupdate'
+gem 'groupdate'
 gem 'active_median', '~> 0.1.0'
 
 gem 'jquery-rails'

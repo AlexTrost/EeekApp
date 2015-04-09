@@ -178,6 +178,8 @@ GEM
       fog-core
       nokogiri (~> 1.5, >= 1.5.11)
     formatador (0.2.5)
+    groupdate (2.4.0)
+      activesupport (>= 3)
     hashie (3.4.0)
     hike (1.2.3)
     httparty (0.13.3)
@@ -352,6 +354,7 @@ DEPENDENCIES
   faker
   figaro
   fog
+  groupdate
   httparty
   jasmine-rails
   jbuilder (~> 2.0)

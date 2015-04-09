@@ -4,7 +4,14 @@
 
 <div class="upload_index_wrapper">
 
-	 <%= line_chart User.group(:created_at) %>
+	<%= javascript_include_tag "//www.google.com/jsapi" %>
+	<%= javascript_include_tag "path/to/highcharts.js", "chartkick" %>
+
+	<% if Rails.env.production? %>
+		<%= line_chart Upload.group_by_day(:created_at).count %>
+	<% else %>
+		<%= line_chart Upload.group(:created_at).count %>
+	<% end %>
 
 
 	<h1> All of your things here </h1>
