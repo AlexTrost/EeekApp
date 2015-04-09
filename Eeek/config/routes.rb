@@ -13,7 +13,7 @@ Rails.application.routes.draw do
   resources :users, only: [:index, :create, :destroy, :update]
   resources :dashboard
   resources :home, only: [:index]
-
+  resources :mood, only: [:create]
 
   resources :uploads, only: [:index, :new, :create, :destroy]
   
