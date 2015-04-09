@@ -11,9 +11,9 @@
 	<%= javascript_include_tag "path/to/highcharts.js", "chartkick" %>
 
 	<% if Rails.env.production? %>
-		<%= line_chart Upload.group_by_day(:created_at).count %>
+		<%= line_chart Mood.group_by_day(:created_at).count %>
 	<% else %>
-		<%= line_chart Upload.group(:created_at).count %>
+		<%= line_chart Mood.group(:created_at).maximum(:scale) %>
 	<% end %>
 
 
