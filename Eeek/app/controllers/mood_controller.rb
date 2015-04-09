@@ -1,9 +1,9 @@
 class MoodController < ApplicationController
 
 	def create
-		params[:user_id] = current_user.id
-    @mood = Mood.new(mood_params)
-		@mood.user_id = current_user.id
+		p "hi" * 100
+		p params
+    @mood = Mood.new(scale: params[:scale], user_id: current_user.id)
     respond_to do |format|
         if @mood.save
           format.js { render :'mood_confirm', locals: { mood: @mood } }
