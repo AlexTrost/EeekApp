@@ -7,13 +7,16 @@
 
 
 
+ 	<div class="graph_div">
+ 		<h3>Your mood trend</h1>
+		<% if Rails.env.production? %>
+			<%= line_chart Mood.group_by_day(:created_at).maximum(:scale) %>
+		<% else %>
+			<%= line_chart Mood.group(:created_at).maximum(:scale) %>
+		<% end %>
+	</div>
 
-	<% if Rails.env.production? %>
-		<%= line_chart Mood.group_by_day(:created_at).maximum(:scale) %>
-	<% else %>
-		<%= line_chart Mood.group(:created_at).maximum(:scale) %>
-	<% end %>
-
+	<hr>
 
 	<h1> All of your things here </h1>
 
