@@ -1,8 +1,6 @@
 class MoodController < ApplicationController
 
 	def create
-		p "hi" * 100
-		p params
     @mood = Mood.new(scale: params[:scale], user_id: current_user.id)
     respond_to do |format|
         if @mood.save

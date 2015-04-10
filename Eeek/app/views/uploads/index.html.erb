@@ -5,10 +5,8 @@
 <div class="upload_index_wrapper">
 
 
-<%= render partial: 'mood/mood_form' %>
 
-	<%= javascript_include_tag "//www.google.com/jsapi" %>
-	<%= javascript_include_tag "path/to/highcharts.js", "chartkick" %>
+
 
 	<% if Rails.env.production? %>
 		<%= line_chart Mood.group_by_day(:created_at).maximum(:scale) %>
