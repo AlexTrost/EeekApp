@@ -1,7 +1,11 @@
 module MoodHelper
 
 	def checkedMoodToday?
-		current_user.mood.last.created_at > Time.now-18.hours
+		if current_user && current_user.moods.count > 0
+			current_user.moods.last.created_at > Time.now-18.hours
+		else
+			false
+		end
 	end
 
 end

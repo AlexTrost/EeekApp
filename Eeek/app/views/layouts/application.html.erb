@@ -9,8 +9,10 @@
 </head>
 <body class="<%= params[:controller] %>_controller">
 
-	<%= render partial: 'mood/mood_form' %>
-
+	<% if !checkedMoodToday? && current_user%>
+		<%= render partial: 'mood/mood_form' %>
+	<% end %> 
+	
 	<div class="not_mood_form">
 		<%= javascript_include_tag "//www.google.com/jsapi" %>
 		<%= javascript_include_tag "path/to/highcharts.js", "chartkick" %>
