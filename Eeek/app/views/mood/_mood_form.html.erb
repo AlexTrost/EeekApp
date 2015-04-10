@@ -1,7 +1,8 @@
 <div class="form mood_form_div">
+  <div class="mood_form_div_content">
     <h1>How are you feeling today?</h1>
     <hr>
-    <p class="mood_form_description">Take a moment to reflect on the whole day so far (not just this moment!) and rate your mood on a scale of 1 to 10.</p>
+    <p class="mood_form_description">Take a moment to reflect on the whole day so far (not just this moment!) and rate your average mood for the whole today on a scale of 1 to 10.</p>
 
     <%= flash[:error] if flash[:error] %>
 
@@ -22,3 +23,8 @@
       <%= f.submit "Save", class: "mood_submit" %>
     <% end %> 
   </div>
+  <div class='mood_thank_you_div'>
+    <h1>Thank you! </h1>
+  </div>  
+
+</div>

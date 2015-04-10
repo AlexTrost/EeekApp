@@ -66,6 +66,10 @@
 	border: 2px #336699 solid;
 }
 
+.mood_thank_you_div {
+	display: none;
+}
+
 /*label {
 	font-family: 'Bree Serif';
 }*/
