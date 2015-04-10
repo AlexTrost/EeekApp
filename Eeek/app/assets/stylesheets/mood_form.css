@@ -31,7 +31,6 @@
 	 font-family: 'Bree Serif';
 
    font-size: 15px;
-   line-height: 3em;
    margin: 0 0.55em 0 0;
    padding: 0;
    width: 1.25em;
@@ -43,3 +42,18 @@
  input[type=radio] {
     -webkit-border-radius: 2em; /* Make radios round */
   }
+
+  .mood_submit {
+  margin: 5% 0 0 0;
+	height: 2em;
+	border-radius: 4px;
+	border: 2px black ridge;
+	text-align: center;
+	font-size: 15px;
+	padding: 0 4px 0 4px;
+	font-family: bold;
+}
+
+.mood_submit:hover {
+	border: 2px #336699 solid;
+}
