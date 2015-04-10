@@ -9,13 +9,16 @@
 </head>
 <body class="<%= params[:controller] %>_controller">
 
-	<%= javascript_include_tag "//www.google.com/jsapi" %>
-	<%= javascript_include_tag "path/to/highcharts.js", "chartkick" %>
 	<%= render partial: 'mood/mood_form' %>
-	
-	<%= yield %>
 
-	<%= render partial: "home/leaf_game" %>
+	<div class="not_mood_form">
+		<%= javascript_include_tag "//www.google.com/jsapi" %>
+		<%= javascript_include_tag "path/to/highcharts.js", "chartkick" %>
+		
+		<%= yield %>
+
+		<%= render partial: "home/leaf_game" %>
+	</div>
 
 </body>
 </html>

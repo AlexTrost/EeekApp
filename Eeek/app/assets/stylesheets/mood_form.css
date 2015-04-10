@@ -1,5 +1,6 @@
 
 .mood_form_div {
+	display: none;
 	z-index: 4;
 	height: auto;
 	width: 50%;
