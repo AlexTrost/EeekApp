@@ -20,6 +20,17 @@
 	
 }
 
+.mood_form_description{
+	font-family: 'Bree Serif';
+	font-size: 14px;
+	margin: 0 4% 0 4%;
+}
+
+.mood_form_grading {
+	font-family: 'Bree Serif';
+	font-size: 12px;
+}
+
 #new_mood_form {
 	border: 3px blue solid;
 	margin: 0 auto;
