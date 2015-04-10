@@ -20,6 +20,9 @@
       <%= label_tag(:mood_label, "10") %><%= radio_button_tag(:scale, "10")%>
       <br>
     <p class="mood_form_grading">(1 is the worst mood and 10 is the best)</p>
+    <br>
+
+      <%= f.text_area :notes, :rows => "6", :placeholder => "Totally optional space to add notes on today's mood."%>
       <%= f.submit "Save", class: "mood_submit" %>
     <% end %> 
   </div>
