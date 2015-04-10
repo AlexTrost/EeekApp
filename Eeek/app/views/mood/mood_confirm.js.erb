@@ -3,6 +3,6 @@ $('.mood_thank_you_div').fadeIn(1000)
 
 setTimeout(function(){
 	$('.mood_form_div').fadeOut(1500)
-}, 1000, function() {
-	$('.not_mood_form').css("opacity", 1)
-});
+	$('.not_mood_form').animate({opacity: 1}, 1000)
+}, 1000);
+
