@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).on("page:change", function() {
 
 	$("#dinosaur_word").mouseover(function() {
 		$("#dinosaur_icon").show()

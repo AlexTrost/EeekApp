@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).on("page:change", function() {
 
 	$("#signup_form_display_button").on("click", function() {
 		if ($("#signup_form_display_button").html() === "Sign Up") {

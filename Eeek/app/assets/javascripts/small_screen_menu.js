@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(document).on("page:change", function(){
 
 	$(".menu_icon").mouseenter(function() {
 		$("nav ul li").slideDown()

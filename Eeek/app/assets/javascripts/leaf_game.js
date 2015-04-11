@@ -1,4 +1,4 @@
-$(document).on('ready page:load', function() {
+$(document).on('page:change', function() {
 
 	$(".game_start").on("click", function() {
 		$(this).css("background-color", "red")
