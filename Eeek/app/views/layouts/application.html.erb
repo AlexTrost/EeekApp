@@ -9,7 +9,7 @@
 </head>
 <body class="<%= params[:controller] %>_controller">
 
-	<% if !checkedMoodToday? && current_user%>
+	<% if !checkedMoodToday? && current_user %>
 		<%= render partial: 'mood/mood_form' %>
 	<% end %> 
 	

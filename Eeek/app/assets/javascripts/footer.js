@@ -1,34 +1,34 @@
-$(document).on("ready", function() {
+$(document).on("page:change", function() {
 
-	$('.footer_about').on("hover", function() {
+	$('.footer_about').hover(function() {
 		$('.secret_about_message').fadeIn()
 	})
 
-$('.footer_about').mouseleave(function() {
+	$('.footer_about').mouseleave(function() {
 		$('.secret_about_message').fadeOut()
 	})
 
-	$('.footer_privacy').on("hover", function() {
+	$('.footer_privacy').hover(function() {
 		$('.secret_privacy_message').fadeIn()
 	})
 
-$('.footer_privacy').mouseleave(function() {
+	$('.footer_privacy').mouseleave(function() {
 		$('.secret_privacy_message').fadeOut()
 	})
 
-	$('.footer_contact').on("hover", function() {
+	$('.footer_contact').hover(function() {
 		$('.secret_contact_message').fadeIn()
 	})
 
-$('.footer_contact').mouseleave(function() {
+	$('.footer_contact').mouseleave(function() {
 		$('.secret_contact_message').fadeOut()
 	})
 
-	$('.footer_terms').on("hover", function() {
+	$('.footer_terms').hover(function() {
 		$('.secret_terms_message').fadeIn()
 	})
 
-$('.footer_terms').mouseleave(function() {
+	$('.footer_terms').mouseleave(function() {
 		$('.secret_terms_message').fadeOut()
 	})
 
