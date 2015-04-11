@@ -16,14 +16,6 @@ $(document).on("page:change", function() {
 		$('.secret_privacy_message').fadeOut()
 	})
 
-	$('.footer_contact').hover(function() {
-		$('.secret_contact_message').fadeIn()
-	})
-
-	$('.footer_contact').mouseleave(function() {
-		$('.secret_contact_message').fadeOut()
-	})
-
 	$('.footer_terms').hover(function() {
 		$('.secret_terms_message').fadeIn()
 	})
