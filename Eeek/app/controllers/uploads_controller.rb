@@ -5,20 +5,6 @@ class UploadsController < ApplicationController
   # include 'Feedback'
   # HardWorker.perform_async('bob', 5)
 
-  def index
-    @user = current_user
-    @uploads = Upload.where(user_id: @user.id)
-    @user_uploads = []
-    @complimentary_uploads = []
-    @uploads.each do |upload| 
-      if upload.complimentary == "true" 
-        @complimentary_uploads << upload
-      else
-        @user_uploads << upload
-      end
-    end
-  end
-
   def new
     #  @upload = Upload.new
     respond_to do |format|

@@ -12,10 +12,11 @@ Rails.application.routes.draw do
 
   resources :users, only: [:index, :create, :destroy, :update]
   resources :feed
+  resources :dashboard, only: [:index]
   resources :home, only: [:index]
   resources :mood, only: [:create]
 
-  resources :uploads, only: [:index, :new, :create, :destroy]
+  resources :uploads, only: [:new, :create, :destroy]
   
   resources :contacts, only: [:create, :new, :destroy, :update, :index]
 
