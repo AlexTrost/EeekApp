@@ -39,7 +39,7 @@ class UploadsController < ApplicationController
           format.js { render :'upload_confirm', locals: { upload: @upload } }
           format.html { redirect_to :back }
           # format.html { render :'uploads/index' }
-          # format.html {redirect_to dashboard_index_path, notice: "The upload has been uploaded."}
+          # format.html {redirect_to feed_index_path, notice: "The upload has been uploaded."}
         else
           format.js { render :upload_fail }
           return "Upload failed"
@@ -56,7 +56,7 @@ class UploadsController < ApplicationController
   #   HardWorker.perform_async(current_id)
   #   respond_to do |format|
   #       format.js { render :render_feed }
-  #       format.html {redirect_to dashboard_index_path}
+  #       format.html {redirect_to feed_index_path}
   #   end
   # end
 

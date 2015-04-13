@@ -1,4 +1,4 @@
-class DashboardController < ApplicationController
+class FeedController < ApplicationController
 	before_filter :authenticate_user!
 
 	def index

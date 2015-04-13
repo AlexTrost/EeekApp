@@ -11,7 +11,7 @@ Rails.application.routes.draw do
   root 'login#index'
 
   resources :users, only: [:index, :create, :destroy, :update]
-  resources :dashboard
+  resources :feed
   resources :home, only: [:index]
   resources :mood, only: [:create]
 

@@ -10,10 +10,10 @@
 #     @upload = uploads[num]
 #     # p "Alex!" * 100
 #     p uploads.length.to_s * 100
-#     redirect_to dashboard_path
+#     redirect_to feed_path
 #     # respond_to do |format|
 #     #     format.js { render :render_feed }
-#     #     format.html {redirect_to dashboard_index_path}
+#     #     format.html {redirect_to feed_index_path}
 #     # end
 #   end
 # end 
