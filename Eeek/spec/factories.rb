@@ -9,5 +9,6 @@ FactoryGirl.define do
   	name { "Text" }
   	text { "Text upload" }
   end
+
   
 end

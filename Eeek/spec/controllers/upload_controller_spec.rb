@@ -1,4 +1,35 @@
+
+
+
+
+
+
+
 require 'rails_helper'
+# require 'carrierwave/test/matchers'
+# require 'support/fog_helper'
+
+# describe ImageFileUploader do
+#   include CarrierWave::Test::Matchers
+
+#   before do
+#     ImageFileUploader.enable_processing = true
+#     @user = Factory(:user, :email => "photo_taker@example.edu")
+#     @uploader = ImageFileUploader.new(@user, Factory(:image))
+#     @uploader.store!(File.open("#{Rails.root}/tmp/uploads/#{Rails.env}/images/"))
+#   end
+
+#   after do
+#     @uploader.remove!
+#     ImageFileUploader.enable_processing = false
+#   end
+
+#   context 'the tiny version' do
+#     it "should scale down a landscape image to be exactly 50 by 50 pixels" do
+#       @uploader.tiny.should have_dimensions(50, 50)
+#     end
+#   end  
+# end
 
 RSpec.describe UploadsController, :type => :controller do
 
@@ -37,7 +68,14 @@ RSpec.describe UploadsController, :type => :controller do
           nil}
       }.to change { Upload.count }.by(1)
     end
+    it 'does not create new upload when no upload parameters passed' do
+      expect {
+        post :create, :upload => {text: nil, attatchment: 
+          nil}
+      }.to_not change { Upload.count }
+    end
     
+
   end
 
   # describe "upload#destroy" do
