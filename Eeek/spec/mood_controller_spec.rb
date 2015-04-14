@@ -14,7 +14,12 @@ RSpec.describe MoodController, :type => :controller do
 			expect(response)
 			}.to change { Mood.count }.by(1)
 		end
-
+		it "creates a new mood with no note parameter passed" do
+			expect {
+				post :create, :scale => 4, :mood => {:notes => nil}
+				expect(response)
+				}.to change { Mood.count }.by(1)
+		end
 	end
 
 end
