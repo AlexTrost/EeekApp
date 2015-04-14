@@ -13,6 +13,14 @@ RSpec.describe FeedController, :type => :controller do
 			get :index
 			expect(response).to render_template("index")
 		end
+		it 'assigns @user to current_user' do 
+      get :index
+      expect(assigns(:user)).to eq User.find(1)
+    end
+    it 'assigns @uploads to Uploads.all' do 
+    	get :index
+    	expect(assigns(:uploads)).to eq Upload.where(user_id: 1) 
+    end
 	end
 
 	describe 'feed#index (no sign in)' do

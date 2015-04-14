@@ -25,22 +25,22 @@ RSpec.describe UploadsController, :type => :controller do
   	end
   end
 
-  describe "upload#create" do 
-		login_user 
-  	it 'creates new upload with valid parameters' do
-      expect {
-        post :create, :upload => {text: "huo"}
-      }.to change { Upload.count }.by(1)
-    end
-  end
+  # describe "upload#create" do 
+		# login_user 
+  # 	it 'creates new upload with valid parameters' do
+  #     expect {
+  #       post :create, :upload => {text: "huo"}
+  #     }.to change { Upload.count }.by(1)
+  #   end
+  # end
 
-  describe "upload#destroy" do
-		login_user 
-    it 'deletes uploads' do 
-      @upload = Upload.create(text: "bleeehh")
-    	delete :destroy, id: @upload.id 
-    	expect(@upload).to be(nil)
-  	end
-  end
+  # describe "upload#destroy" do
+		# login_user 
+  #   it 'deletes uploads' do 
+  #     @upload = Upload.create(text: "bleeehh")
+  #   	delete :destroy, id: @upload.id 
+  #   	expect(@upload).to be(nil)
+  # 	end
+  # end
 
 end
