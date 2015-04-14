@@ -10,7 +10,7 @@ RSpec.describe MoodController, :type => :controller do
 		login_user
 		it "creates a new mood with all and valid parameters" do 
 			expect {
-			post :create, :scale => 4, :mood => { :notes => "this is a test note"
+			post :create, :scale => 4, :mood => { :notes => "this is a test note" }
 			}.to change { Mood.count }.by(1)
 		end
 		it "creates a new mood with no note parameter passed" do
@@ -21,6 +21,11 @@ RSpec.describe MoodController, :type => :controller do
 		it "does not create a new mood with no scale but yes notes" do 
 			expect {
 				post :create, :scale => nil, :mood => { :notes => "this is going to fail."}
+			}.to_not change { Mood.count }
+		end
+		it "does not create a new mood with no scale and no notes" do 
+			expect {
+				post :create, :scale => nil, :mood => { :notes => nil}
 			}.to_not change { Mood.count }
 		end
 	end
