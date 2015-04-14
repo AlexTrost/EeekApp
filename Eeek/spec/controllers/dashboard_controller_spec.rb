@@ -21,7 +21,7 @@ RSpec.describe DashboardController, :type => :controller do
     end
     it 'assigns @user to current_user' do 
       get :index
-      expect(assigns(:user)).to eq(User.where(user_id: 1))
+      expect(assigns(:user)).to eq User.find(1)
     end
     it 'assigns @uploads to Uploads.all' do 
     	get :index
