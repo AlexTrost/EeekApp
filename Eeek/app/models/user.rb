@@ -51,6 +51,7 @@ end
     Upload.create(user_id: self.id, text: "This too shall pass.", complimentary: "true")
     Upload.create(user_id: self.id, text: "You have fantastic taste in socks.", complimentary: "true")
     Upload.create(user_id: self.id, text: "Take slow sips of a cold glass of water.", complimentary: "true")
+    Upload.create(user_id: self.id, text: "Try to think of 3 things that are going well in your life right now.", complimentary: "true")
   end
 
 
