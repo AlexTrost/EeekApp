@@ -15,6 +15,10 @@ RSpec.describe LoginController, :type => :controller do
 			get :index
 			expect(response.status).to eq 200
 		end
+		it 'renders the correct index page' do 
+			get :index
+			expect(response).to render_template('index')
+		end
 	end
 
 end
