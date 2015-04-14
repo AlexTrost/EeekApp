@@ -538,6 +538,62 @@
         null,
         null
       ],
+      "/Users/alextrost/Desktop/Coding/apps/Eeek/EeekApp/Eeek/spec/mood_controller_spec.rb": [
+        1,
+        null,
+        1,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        2,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/Users/alextrost/Desktop/Coding/apps/Eeek/EeekApp/Eeek/app/controllers/mood_controller.rb": [
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        2,
+        null,
+        0,
+        0,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        1,
+        0,
+        null,
+        null,
+        null,
+        null
+      ],
       "/Users/alextrost/Desktop/Coding/apps/Eeek/EeekApp/Eeek/app/models/upload.rb": [
         1,
         1,
@@ -609,8 +665,17 @@
         null,
         null,
         null
+      ],
+      "/Users/alextrost/Desktop/Coding/apps/Eeek/EeekApp/Eeek/app/models/mood.rb": [
+        1,
+        null,
+        1,
+        1,
+        null,
+        null,
+        null
       ]
     },
-    "timestamp": 1429045472
+    "timestamp": 1429047304
   }
 }
