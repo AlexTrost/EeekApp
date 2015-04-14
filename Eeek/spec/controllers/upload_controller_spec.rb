@@ -16,6 +16,10 @@ RSpec.describe UploadsController, :type => :controller do
   	# 	expect(response.status).to eq(302)
   	# end
   end
+
+  before(:each) do
+    request.env["HTTP_REFERER"] = "where_i_came_from"
+  end
 	
   describe "upload#new" do
 		login_user 
@@ -25,14 +29,15 @@ RSpec.describe UploadsController, :type => :controller do
   	end
   end
 
-  # describe "upload#create" do 
-		# login_user 
-  # 	it 'creates new upload with valid parameters' do
-  #     expect {
-  #       post :create, :upload => {text: "huo"}
-  #     }.to change { Upload.count }.by(1)
-  #   end
-  # end
+  describe "upload#create" do 
+		login_user 
+  	it 'creates new upload with valid parameters' do
+      expect {
+        post :create, :upload => {text: "huo", attatchment: 
+          nil}
+      }.to change { Upload.count }.by(1)
+    end
+  end
 
   # describe "upload#destroy" do
 		# login_user 
