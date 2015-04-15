@@ -78,11 +78,18 @@ RSpec.describe UploadsController, :type => :controller do
 
   end
 
+  before(:each) do 
+    @upload = Upload.create!(text: "hehehe", user_id: 2)
+  end
+
   describe "upload#destroy" do
     login_user 
+    it 'assigns @uploads to the upload from the parameter' do 
+        delete :destroy, :id => @upload
+      expect(assigns(:upload)).to eq @upload
+    end
     it 'delete article ' do
-      @upload = Upload.create!(text: "bleeehh", user_id: 1)
-      expect{
+      expect {
         delete :destroy,:id => @upload.id      
       }.to change{Upload.count}.by(-1)
     end
