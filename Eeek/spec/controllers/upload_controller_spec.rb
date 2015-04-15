@@ -78,13 +78,14 @@ RSpec.describe UploadsController, :type => :controller do
 
   end
 
-  # describe "upload#destroy" do
-		# login_user 
-  #   it 'deletes uploads' do 
-  #     @upload = Upload.create(text: "bleeehh")
-  #   	delete :destroy, id: @upload.id 
-  #   	expect(@upload).to be(nil)
-  # 	end
-  # end
+  describe "upload#destroy" do
+    login_user 
+    it 'delete article ' do
+      @upload = Upload.create!(text: "bleeehh", user_id: 1)
+      expect{
+        delete :destroy,:id => @upload.id      
+      }.to change{Upload.count}.by(-1)
+    end
+  end
 
 end
