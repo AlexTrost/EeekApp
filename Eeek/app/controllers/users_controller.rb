@@ -4,7 +4,6 @@ class UsersController < ApplicationController
 	end
 
 	def login
-		p "2" * 100
 		if params[:email] == "" || params[:password] == ""
 			flash[:error] = "Email and Password fields cannot be blank"
 			redirect_to controller: 'login', action: 'index'
@@ -24,11 +23,9 @@ class UsersController < ApplicationController
 	end
 
 	def sign_up
-		p "hohi" * 100
 	end
 
 	def create	
-		p "ho" * 100
 	end
 
 	def new

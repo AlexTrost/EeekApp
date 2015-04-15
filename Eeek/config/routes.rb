@@ -10,7 +10,7 @@ Rails.application.routes.draw do
 
   root 'login#index'
 
-  resources :users, only: [:index, :create, :destroy, :update]
+  resources :users, only: [:create, :destroy, :update]
   resources :feed
   resources :dashboard, only: [:index]
   resources :home, only: [:index]
