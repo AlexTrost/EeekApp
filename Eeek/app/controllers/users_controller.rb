@@ -1,8 +1,5 @@
 class UsersController < ApplicationController
 
-	def index
-	end
-
 	def login
 		if params[:email] == "" || params[:password] == ""
 			flash[:error] = "Email and Password fields cannot be blank"
