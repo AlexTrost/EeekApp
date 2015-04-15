@@ -78,11 +78,11 @@ RSpec.describe UploadsController, :type => :controller do
 
   end
 
-  before(:each) do 
-    @upload = Upload.create!(text: "hehehe", user_id: 2)
-  end
 
   describe "upload#destroy" do
+    before(:each) do 
+      @upload = Upload.create!(text: "hehehe", user_id: 2)
+    end
     login_user 
     it 'assigns @uploads to the upload from the parameter' do 
         delete :destroy, :id => @upload
