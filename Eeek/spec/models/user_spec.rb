@@ -19,6 +19,18 @@ RSpec.describe User, :type => :model do
 	  it { should_not allow_value("").for(:password) }
 	  it { should_not allow_value("yo").for(:password)}
 	  it { should allow_value("yoyoyoyoyo").for(:password)}
+
+	  it 'lets you create a user' do
+	    @user = User.create!(name: "Alex", email: "Alex@alex.alex", password: "hihihihihi")
+	    expect(User.all).to include(@user)
+  	end
+
+  	it 'complimentary goodstuff fired on new users' do
+	    @user = User.create!(name: "Alex", email: "Alex@alex.alex", password: "hihihihihi")
+	    @user.reload
+	    expect(@user.uploads.where(complimentary: "true").count).to be(12)
+	  end
+
 	end
 
 
