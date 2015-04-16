@@ -18,6 +18,27 @@
         null
       ],
       "/Users/alextrost/Desktop/Coding/apps/Eeek/EeekApp/Eeek/spec/models/mood_spec.rb": [
+        1,
+        null,
+        1,
+        null,
+        1,
+        2,
+        null,
+        2,
+        2,
+        2,
+        null,
+        null,
+        null
+      ],
+      "/Users/alextrost/Desktop/Coding/apps/Eeek/EeekApp/Eeek/app/models/mood.rb": [
+        1,
+        null,
+        1,
+        1,
+        1,
+        null,
         null,
         null
       ],
@@ -153,17 +174,8 @@
         null,
         null,
         null
-      ],
-      "/Users/alextrost/Desktop/Coding/apps/Eeek/EeekApp/Eeek/app/models/mood.rb": [
-        1,
-        null,
-        1,
-        1,
-        null,
-        null,
-        null
       ]
     },
-    "timestamp": 1429207905
+    "timestamp": 1429208458
   }
 }

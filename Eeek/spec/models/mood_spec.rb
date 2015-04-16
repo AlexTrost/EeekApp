@@ -1,2 +1,12 @@
-    # it { expect(user).to_not allow_value("Alex.alex").for(:email) }
-    # it { expect(blog).to allow_blank(:connect_to_facebook) }
+require 'rails_helper'
+
+RSpec.describe Mood, :type => :model do
+  
+	describe Mood do
+	  it { should belong_to(:user) }
+
+	  it { should allow_value(1).for(:scale) }
+	  it { should_not allow_value("").for(:scale) }
+
+	end
+end
