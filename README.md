@@ -11,6 +11,6 @@ Eeek is an application geared towards giving users the ability to build a suppor
 
 ![alt tag](Eeek/app/assets/images/scale_page.png)
 
-![alt tag](Eeek/app/assets/images/eeek_page.png)
+![alt tag](Eeek/app/assets/images/eee_page.png)
 
 
