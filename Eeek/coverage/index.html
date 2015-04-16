@@ -14,26 +14,26 @@
       <img src="./assets/0.8.0/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2015-04-16T10:28:14-07:00">2015-04-16T10:28:14-07:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2015-04-16T10:39:40-07:00">2015-04-16T10:39:40-07:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="green">93.02%</span></span>
+    (<span class="covered_percent"><span class="green">93.33%</span></span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.2
+         1.23
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
     <b>8</b> files in total.
-    <b>43</b> relevant lines. 
-    <span class="green"><b>40</b> lines covered</span> and
+    <b>45</b> relevant lines. 
+    <span class="green"><b>42</b> lines covered</span> and
     <span class="red"><b>3</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -123,9 +123,9 @@
       <tr>
         <td class="strong"><a href="#6d8fcace9a0d2770ebe725869a007ade347690f4" class="src_link" title="spec/models/user_spec.rb">spec/models/user_spec.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>20</td>
-        <td>14</td>
-        <td>14</td>
+        <td>25</td>
+        <td>16</td>
+        <td>16</td>
         <td>0</td>
         <td>1.8</td>
       </tr>
@@ -931,8 +931,8 @@
     <h3>spec/models/user_spec.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>14</b> relevant lines. 
-      <span class="green"><b>14</b> lines covered</span> and
+      <b>16</b> relevant lines. 
+      <span class="green"><b>16</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -988,58 +988,58 @@
           <code class="ruby">	  it { should have_many(:moods) }</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="9">
-          <span class="hits">2</span>
+        <li class="never" data-hits="" data-linenumber="9">
           
-          <code class="ruby">	  it { expect(user).to allow_value(&quot;Alex&quot;).for(:name) }</code>
+          
+          <code class="ruby"></code>
         </li>
       
         <li class="covered" data-hits="2" data-linenumber="10">
           <span class="hits">2</span>
           
-          <code class="ruby">	  it { expect(user).to allow_value(&quot;Alex Trost&quot;).for(:name) }</code>
+          <code class="ruby">	  it { should allow_value(&quot;Alex&quot;).for(:name) }</code>
         </li>
       
         <li class="covered" data-hits="2" data-linenumber="11">
           <span class="hits">2</span>
           
-          <code class="ruby">	  it { expect(user).to_not allow_value(&quot;Alex@alex.alex&quot;).for(:email) }</code>
+          <code class="ruby">	  it { should allow_value(&quot;Alex Trost&quot;).for(:name) }</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="12">
-          <span class="hits">2</span>
+        <li class="never" data-hits="" data-linenumber="12">
           
-          <code class="ruby">	  it { expect(user).to allow_value(&quot;Alex&quot;).for(:email) }</code>
+          
+          <code class="ruby"></code>
         </li>
       
         <li class="covered" data-hits="2" data-linenumber="13">
           <span class="hits">2</span>
           
-          <code class="ruby">	  it { expect(user).to_not allow_value(&quot;Alex@alex&quot;).for(:email) }</code>
+          <code class="ruby">	  it { should allow_value(&quot;Alex@alex.alex&quot;).for(:email) }</code>
         </li>
       
         <li class="covered" data-hits="2" data-linenumber="14">
           <span class="hits">2</span>
           
-          <code class="ruby">	  it { expect(user).to_not allow_value(&quot;Alex.alex&quot;).for(:email) }</code>
+          <code class="ruby">	  it { should_not allow_value(&quot;Alex&quot;).for(:email) }</code>
         </li>
       
         <li class="covered" data-hits="2" data-linenumber="15">
           <span class="hits">2</span>
           
-          <code class="ruby">	  it { expect(blog).to allow_blank(:connect_to_facebook) }</code>
+          <code class="ruby">	  it { should_not allow_value(&quot;Alex@alex&quot;).for(:email) }</code>
         </li>
       
         <li class="covered" data-hits="2" data-linenumber="16">
           <span class="hits">2</span>
           
-          <code class="ruby">	  it { expect(blog).to allow_nil(:connect_to_facebook) }</code>
+          <code class="ruby">	  it { should_not allow_value(&quot;Alex.alex&quot;).for(:email) }</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="17">
+        <li class="covered" data-hits="2" data-linenumber="17">
+          <span class="hits">2</span>
           
-          
-          <code class="ruby">	end</code>
+          <code class="ruby">	  it { should_not allow_value(&quot;&quot;).for(:email) }</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="18">
@@ -1048,13 +1048,43 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="19">
+        <li class="covered" data-hits="2" data-linenumber="19">
+          <span class="hits">2</span>
+          
+          <code class="ruby">	  it { should_not allow_value(&quot;&quot;).for(:password) }</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="20">
+          <span class="hits">2</span>
+          
+          <code class="ruby">	  it { should_not allow_value(&quot;yo&quot;).for(:password)}</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="21">
+          <span class="hits">2</span>
+          
+          <code class="ruby">	  it { should allow_value(&quot;yoyoyoyoyo&quot;).for(:password)}</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="22">
+          
+          
+          <code class="ruby">	end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="23">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="20">
+        <li class="never" data-hits="" data-linenumber="24">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="25">
           
           
           <code class="ruby">end</code>
