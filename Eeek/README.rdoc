@@ -26,3 +26,12 @@ Things you may want to cover:
 
 Please feel free to use a different markup language if you do not plan to run
 <tt>rake doc:app</tt>.
+
+[Eeek on Heroku](https://eeek.herokuapp.com)
+
+Eeek is an application geared towards giving users the ability to build a support system for themselves for anxiety attacks and depressive episodes, with an ultimate goal of preventing suicide attempts. 
+
+![alt tag](app/assests/images/login_page.png)
+![alt tag](app/assests/images/scale_page.png)
+![alt tag](app/assests/images/eeek_page.png)
+
