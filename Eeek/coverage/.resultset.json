@@ -1,6 +1,15 @@
 {
   "RSpec": {
     "coverage": {
+      "/Users/alextrost/Desktop/Coding/apps/Eeek/EeekApp/Eeek/app/models/contact.rb": [
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        null
+      ],
       "/Users/alextrost/Desktop/Coding/apps/Eeek/EeekApp/Eeek/spec/models/model_spec.rb": [
         null,
         null,
@@ -153,17 +162,8 @@
         null,
         null,
         null
-      ],
-      "/Users/alextrost/Desktop/Coding/apps/Eeek/EeekApp/Eeek/app/models/contact.rb": [
-        1,
-        1,
-        1,
-        1,
-        null,
-        1,
-        null
       ]
     },
-    "timestamp": 1429207476
+    "timestamp": 1429207905
   }
 }
