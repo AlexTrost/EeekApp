@@ -10,7 +10,7 @@
  	<div class="graph_div">
  		<h3>Your mood trend</h1>
 		<% if Rails.env.production? %>
-			<%= line_chart current_user.moods.group_by_day(:created_at).maximum(:scale) %>
+			<%= line_chart current_user.moods.group_by_day(:created_at).maximum(:scale), discrete: true  %>
 		<% else %>
 			<%= line_chart current_user.moods.group(:created_at).maximum(:scale) %>
 		<% end %>
